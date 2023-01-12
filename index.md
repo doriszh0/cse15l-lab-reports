@@ -9,7 +9,7 @@ hello
   This exists within a block
 ````
 
-[*olleh*](https://github.com/doriszh0/cse15l-lab-reports/life.html)
+[*olleh*](https://doriszh0.github.io/cse15l-lab-reports/life.html)
 
 --------------------------------------------
 
