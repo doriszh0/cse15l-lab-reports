@@ -4,7 +4,17 @@
 
 ---------------------------------------------------------
 
+1. Go to [this link](https://sdacs.ucsd.edu/~icc/index.php).
 
+2. Sign in with your school username and Student ID.
+
+3. Find your cse15L account and account username.
+> Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters
+
+4. If you need to change your password, go to [this link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit).
+
+<br/>
+<br/>
 
 ## Part 1: Installing VScode (Visual Studio Code)
 Note: Skip this if you already have VScode installed
