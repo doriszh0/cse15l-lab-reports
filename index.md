@@ -1,8 +1,8 @@
 hello
 > goodbye
 > good bye
-> good
-> bye
+ `good`
+ `bye`
 
 # elloh
 ```` 
