@@ -32,4 +32,21 @@ Note: Skip this if you already have VScode installed
 > 
 ![VScode Start-Up Screen](vscode-start.png)
 
-3.   
+<br/>
+<br/>
+
+## Part 3: Remotely Connecting
+
+---------------------------------------------------------
+
+1. If you are on Windows, download and install [Git](https://gitforwindows.org/) onto your computer.
+
+<br/>
+<br/>
+
+2. Open the terminal in VScode (Under *terminal* in the upper bar), then open the Command Palette (Under *view* in the upper bar). 
+
+<br/>
+<br/>
+
+3. 
