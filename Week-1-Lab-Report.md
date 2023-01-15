@@ -13,7 +13,7 @@
 
 > You should see something similar to the image below
 > 
-<img width="371" alt="cse15L-acc" src="https://user-images.githubusercontent.com/66851491/212466395-66094f19-d6ba-4c63-9b6d-ed500cc667ed.png">
+<img width="650" height="250" alt="cse15L-acc" src="https://user-images.githubusercontent.com/66851491/212466395-66094f19-d6ba-4c63-9b6d-ed500cc667ed.png">
 
 <br/>
 
@@ -101,7 +101,7 @@ your cse15L account username.
 
 > Note: If there are any issues, refer to the image below, which shows the commands being run.
 
-<img width="339" alt="vscode-commands" src="https://user-images.githubusercontent.com/66851491/212519846-ae63a803-2ffe-431a-b62b-04c53271379a.png">
+<img width="650" height="200" alt="vscode-commands" src="https://user-images.githubusercontent.com/66851491/212519846-ae63a803-2ffe-431a-b62b-04c53271379a.png">
 
 <br/>
 <br/>
