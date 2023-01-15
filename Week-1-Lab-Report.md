@@ -28,7 +28,8 @@
 ---------------------------------------------------------
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download) onto your computer, and open up VScode.
-> Make sure to select the correct version depending on your operating system (Windows, Linux, Mac)
+
+> Note: Make sure to select the correct version depending on your operating system (Windows, Linux, Mac)
 
 > You should see something similar to the screen below after opening VScode
 > 
@@ -47,6 +48,7 @@
 
 2. Open the terminal in VScode (Under *Terminal* in the upper bar), then open the command palette (Under *View* in the upper bar). Search "Select
 default profile" in the command palette, and then select Git Bash.
+
 > You should see something similar to the screen below
 > 
 <img width="960" alt="vscode-gitbash" src="https://user-images.githubusercontent.com/66851491/212463058-46d82a24-aff6-4e58-9581-043bf9b0b942.png">
@@ -67,11 +69,13 @@ your cse15L account username.
 <br/>
 
 5. If this is the first time you are connecting to this server, the terminal will then output a message about authenticity and ask you: `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. Type in `yes`. 
+
 > Note: Skip this if this is not your first time.
 
 <br/>
 
 6. You will then have to enter your password to your cse15L account next to where it says `Password:`.
+
 > Note: If you just changed the password, it may take a while (maybe even up to an hour) for the password change to take effect.
 
 > Another Note: When you type in your password, nothing will show up on the screen, but the characters are still being registered (hidden due to privacy).
