@@ -11,6 +11,8 @@
 2. Find your cse15L account and account username.
 > Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters
 
+<br/>
+
 > You should see something similar to the image below
 > 
 <img width="650" height="250" alt="cse15L-acc" src="https://user-images.githubusercontent.com/66851491/212466395-66094f19-d6ba-4c63-9b6d-ed500cc667ed.png">
@@ -31,6 +33,8 @@
 
 > Note: Make sure to select the correct version depending on your operating system (Windows, Linux, Mac)
 
+<br/>
+
 > You should see something similar to the screen below after opening VScode
 > 
 <img width="960" alt="vscode-start" src="https://user-images.githubusercontent.com/66851491/212463055-7fe0c44d-14a0-45c4-a0a3-b67911e6703c.png">
@@ -48,6 +52,8 @@
 
 2. Open the terminal in VScode (Under *Terminal* in the upper bar), then open the command palette (Under *View* in the upper bar). Search "Select
 default profile" in the command palette, and then select Git Bash.
+
+<br/>
 
 > You should see something similar to the screen below
 > 
