@@ -9,7 +9,7 @@
 <br/>
 
 2) Find your CSE15L account and account username.
-> Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters
+> Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters.
 
 <br/>
 
@@ -31,7 +31,7 @@
 
 1) Download and install [Visual Studio Code](https://code.visualstudio.com/Download) onto your computer, and open up VScode.
 
-> Note: Make sure to select the correct version depending on your operating system (Windows, Linux, Mac)
+> Note: Make sure to select the correct version depending on your operating system (Windows, Linux, Mac).
 
 <br/>
 
@@ -98,13 +98,10 @@ your CSE15L account username.
 
 1) Try out this series of commands in the Git Bash terminal:
 
-> Run the command `cd \home`, which should open the absolute path `\home`.
-
-> Run the command `ls -a` to look at all the files, including hidden ones, in the current directory.
-
-> Run the command `cd ~` to return to your user directory. Then run the command `cd ..` to go to the parent directory for it.
-
-> Run the command `cat public/hello.txt` to go to the relative path `public/hello.txt` and output the text in the file `hello.txt`.
+* Run the command `cd \home`, which should open the absolute path `\home`.
+* Run the command `ls -a` to look at all the files, including hidden ones, in the current directory.
+* Run the command `cd ~` to return to your user directory. Then run the command `cd ..` to go to the parent directory for it.
+* Run the command `cat public/hello.txt` to go to the relative path `public/hello.txt` and output the text in the file `hello.txt`.
 
 <br/>
 
