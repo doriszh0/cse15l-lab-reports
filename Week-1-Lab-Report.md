@@ -8,12 +8,12 @@
 
 <br/>
 
-2) Find your cse15L account and account username.
+2) Find your CSE15L account and account username.
 > Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters
 
 <br/>
 
-> You should see something similar to the image below
+> You should see a similar button as to the one in the image below with your account username. You can click on it to view more of your CSE15L account details.
 > 
 <img width="650" height="250" alt="cse15L-acc" src="https://user-images.githubusercontent.com/66851491/212466395-66094f19-d6ba-4c63-9b6d-ed500cc667ed.png">
 
@@ -35,7 +35,7 @@
 
 <br/>
 
-> You should see something similar to the screen below after opening VScode
+> You should see something similar to the screen below after opening VScode.
 > 
 <img width="960" alt="vscode-start" src="https://user-images.githubusercontent.com/66851491/212463055-7fe0c44d-14a0-45c4-a0a3-b67911e6703c.png">
 
@@ -55,19 +55,18 @@ default profile" in the command palette, and then select Git Bash.
 
 <br/>
 
-> You should see something similar to the screen below
+> You should see something similar to the screen below, where the command palette is at the top of the screen and the terminal is at the bottom. 
 > 
 <img width="960" alt="vscode-gitbash" src="https://user-images.githubusercontent.com/66851491/212463058-46d82a24-aff6-4e58-9581-043bf9b0b942.png">
 
 <br/>
 
-3) Go the terminal and click on the plus sign in the upper right corner. This should open a drop down menu. Select Git Bash, and a new Git Bash terminal will
-be created.
+3) Go the terminal at the bottom of the screen and click on the plus sign in the upper right corner. This should open a drop down menu. Select Git Bash, and a new Git Bash terminal will be created.
 
 <br/>
 
-4) Type the following template into the Git Bash terminal: `$ ssh ____________@ieng6.ucsd.edu` where the blank spaces should be filled with
-your cse15L account username. 
+4) Type the following template into the Git Bash terminal: `$ ssh ____________@ieng6.ucsd.edu`, where the blank spaces should be filled with
+your CSE15L account username. 
 > Ex: `$ ssh cs15lwi23zzz@ieng6.ucsd.edu`
 
 > Note: You should see the that the terminal already has `$`, and you don't type it in yourself. 
@@ -76,11 +75,11 @@ your cse15L account username.
 
 5) If this is the first time you are connecting to this server, the terminal will then output a message about authenticity and ask you: `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. Type in `yes`. 
 
-> Note: Skip this if this is not your first time.
+> Note: You can skip this if this is not your first time.
 
 <br/>
 
-6) You will then have to enter your password to your cse15L account next to where it says `Password:`.
+6) You will then have to enter your password to your CSE15L account next to where it says `Password:`.
 
 > Note: If you just changed the password, it may take a while (maybe even up to an hour) for the password change to take effect.
 
@@ -88,7 +87,7 @@ your cse15L account username.
 
 <br/>
 
-7) You are now connected to the remote server, and should see a message like `Hello _________, you are currently logged into ieng6-203.ucsd.edu`, where the blank space is your cse15L account username. There should also be some other statuses and user information displayed.
+7) You are now connected to the remote server, and should see a message like `Hello _________, you are currently logged into ieng6-203.ucsd.edu`, where the blank space is your CSE15L account username. There should also be some other statuses and user information displayed.
 
 <br/>
 <br/>
