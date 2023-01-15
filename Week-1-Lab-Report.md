@@ -4,41 +4,33 @@
 
 ---------------------------------------------------------
 
-1. Go to [this link](https://sdacs.ucsd.edu/~icc/index.php).
+1. Go to [this link](https://sdacs.ucsd.edu/~icc/index.php), and sign in with your school username and Student ID.
 
 <br/>
 
-2. Sign in with your school username and Student ID.
-
-<br/>
-
-3. Find your cse15L account and account username.
+2. Find your cse15L account and account username.
 > Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters
 
-> You should see something similar to the screen below
+> You should see something similar to the image below
 > 
 <img width="371" alt="cse15L-acc" src="https://user-images.githubusercontent.com/66851491/212466395-66094f19-d6ba-4c63-9b6d-ed500cc667ed.png">
 
-
 <br/>
 
-4. If you need to change your password, go to [this link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit).
+3. If you need to change your password, go to [this link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit).
 
 <br/>
 <br/>
 
 ## Part 1: Installing VScode (Visual Studio Code)
-Note: Skip this if you already have VScode installed
+> Note: Skip this if you already have VScode installed.
 
 ---------------------------------------------------------
 
-1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download) onto your computer.
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download) onto your computer, and open up VScode.
 > Make sure to select the correct version depending on your operating system (Windows, Linux, Mac)
 
-<br/>
-
-2. Open up VScode.
-> You should see something similar to the screen below
+> You should see something similar to the screen below after opening VScode
 > 
 <img width="960" alt="vscode-start" src="https://user-images.githubusercontent.com/66851491/212463055-7fe0c44d-14a0-45c4-a0a3-b67911e6703c.png">
 
@@ -59,7 +51,6 @@ default profile" in the command palette, and then select Git Bash.
 > 
 <img width="960" alt="vscode-gitbash" src="https://user-images.githubusercontent.com/66851491/212463058-46d82a24-aff6-4e58-9581-043bf9b0b942.png">
 
-
 <br/>
 
 3. Go the terminal and click on the plus sign in the upper right corner. This should open a drop down menu. Select Git Bash, and a new Git Bash terminal will
@@ -75,7 +66,8 @@ your cse15L account username.
 
 <br/>
 
-5. Because this is (likely) the first time you are connecting to this server, the terminal will then output a message about authenticity and ask you: `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. Type in `yes`. 
+5. If this is the first time you are connecting to this server, the terminal will then output a message about authenticity and ask you: `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. Type in `yes`. 
+> Note: Skip this if this is not your first time.
 
 <br/>
 
@@ -86,7 +78,7 @@ your cse15L account username.
 
 <br/>
 
-7. You are now connected to the remote server, and should see a message like `Hello _________, you are currently logged into ieng6-203.ucsd.edu`, where the blank space is your cse15L account username. There should also be some other status and user information displayed.
+7. You are now connected to the remote server, and should see a message like `Hello _________, you are currently logged into ieng6-203.ucsd.edu`, where the blank space is your cse15L account username. There should also be some other statuses and user information displayed.
 
 <br/>
 <br/>
@@ -95,4 +87,25 @@ your cse15L account username.
 
 ---------------------------------------------------------
 
+1. Try out this series of commands in the Git Bash terminal:
 
+> Run the command `cd \home`, which should open the absolute path `\home`.
+
+> Run the command `ls -a` to look at all the files, including hidden ones, in the current directory.
+
+> Run the command `cd ~` to return to your user directory. Then run the command `cd ..` to go to the parent directory for it.
+
+> Run the command `cat public/hello.txt` to go to the relative path `public/hello.txt` and output the text in the file `hello.txt`.
+
+<br/>
+
+> Note: If there are any issues, refer to the image below, which shows the commands being run.
+
+<img width="339" alt="vscode-commands" src="https://user-images.githubusercontent.com/66851491/212519846-ae63a803-2ffe-431a-b62b-04c53271379a.png">
+
+<br/>
+<br/>
+
+---------------------------------------------------------
+
+## Congratulations! You have finished the tutorial and can now log in to your CSE15L account on a remote server!
