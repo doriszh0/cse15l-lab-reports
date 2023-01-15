@@ -4,11 +4,11 @@
 
 ---------------------------------------------------------
 
-(1) Go to [this link](https://sdacs.ucsd.edu/~icc/index.php), and sign in with your school username and Student ID.
+1) Go to [this link](https://sdacs.ucsd.edu/~icc/index.php), and sign in with your school username and Student ID.
 
 <br/>
 
-(2) Find your cse15L account and account username.
+2) Find your cse15L account and account username.
 > Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters
 
 <br/>
