@@ -4,11 +4,11 @@
 
 ---------------------------------------------------------
 
-1. Go to [this link](https://sdacs.ucsd.edu/~icc/index.php), and sign in with your school username and Student ID.
+1) Go to [this link](https://sdacs.ucsd.edu/~icc/index.php), and sign in with your school username and Student ID.
 
 <br/>
 
-2. Find your cse15L account and account username.
+2) Find your cse15L account and account username.
 > Ex: For Winter 2023, the account username would be cs15lwi23___, where at the end is a personalized random sequence of characters
 
 <br/>
@@ -19,7 +19,7 @@
 
 <br/>
 
-3. If you need to change your password, go to [this link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit).
+3) If you need to change your password, go to [this link](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit).
 
 <br/>
 <br/>
@@ -29,7 +29,7 @@
 
 ---------------------------------------------------------
 
-1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download) onto your computer, and open up VScode.
+1) Download and install [Visual Studio Code](https://code.visualstudio.com/Download) onto your computer, and open up VScode.
 
 > Note: Make sure to select the correct version depending on your operating system (Windows, Linux, Mac)
 
@@ -46,11 +46,11 @@
 
 ---------------------------------------------------------
 
-1. If you are on Windows, download and install [Git](https://gitforwindows.org/) onto your computer.
+1) If you are on Windows, download and install [Git](https://gitforwindows.org/) onto your computer.
 
 <br/>
 
-2. Open the terminal in VScode (Under *Terminal* in the upper bar), then open the command palette (Under *View* in the upper bar). Search "Select
+2) Open the terminal in VScode (Under *Terminal* in the upper bar), then open the command palette (Under *View* in the upper bar). Search "Select
 default profile" in the command palette, and then select Git Bash.
 
 <br/>
@@ -61,12 +61,12 @@ default profile" in the command palette, and then select Git Bash.
 
 <br/>
 
-3. Go the terminal and click on the plus sign in the upper right corner. This should open a drop down menu. Select Git Bash, and a new Git Bash terminal will
+3) Go the terminal and click on the plus sign in the upper right corner. This should open a drop down menu. Select Git Bash, and a new Git Bash terminal will
 be created.
 
 <br/>
 
-4. Type the following template into the Git Bash terminal: `$ ssh ____________@ieng6.ucsd.edu` where the blank spaces should be filled with
+4) Type the following template into the Git Bash terminal: `$ ssh ____________@ieng6.ucsd.edu` where the blank spaces should be filled with
 your cse15L account username. 
 > Ex: `$ ssh cs15lwi23zzz@ieng6.ucsd.edu`
 
@@ -74,13 +74,13 @@ your cse15L account username.
 
 <br/>
 
-5. If this is the first time you are connecting to this server, the terminal will then output a message about authenticity and ask you: `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. Type in `yes`. 
+5) If this is the first time you are connecting to this server, the terminal will then output a message about authenticity and ask you: `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. Type in `yes`. 
 
 > Note: Skip this if this is not your first time.
 
 <br/>
 
-6. You will then have to enter your password to your cse15L account next to where it says `Password:`.
+6) You will then have to enter your password to your cse15L account next to where it says `Password:`.
 
 > Note: If you just changed the password, it may take a while (maybe even up to an hour) for the password change to take effect.
 
@@ -88,7 +88,7 @@ your cse15L account username.
 
 <br/>
 
-7. You are now connected to the remote server, and should see a message like `Hello _________, you are currently logged into ieng6-203.ucsd.edu`, where the blank space is your cse15L account username. There should also be some other statuses and user information displayed.
+7) You are now connected to the remote server, and should see a message like `Hello _________, you are currently logged into ieng6-203.ucsd.edu`, where the blank space is your cse15L account username. There should also be some other statuses and user information displayed.
 
 <br/>
 <br/>
@@ -97,7 +97,7 @@ your cse15L account username.
 
 ---------------------------------------------------------
 
-1. Try out this series of commands in the Git Bash terminal:
+1) Try out this series of commands in the Git Bash terminal:
 
 > Run the command `cd \home`, which should open the absolute path `\home`.
 
