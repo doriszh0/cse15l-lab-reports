@@ -76,8 +76,6 @@ Because the set up of the server such as the port number and calling the server 
 Hello
 How are you
 ```
-</br>
-
 The exact request I typed in was: `http://ieng6-203.ucsd.edu:7011/add-message?s=How are you`
 
 </br> </br>
@@ -88,14 +86,31 @@ The exact request I typed in was: `http://ieng6-203.ucsd.edu:7011/add-message?s=
 
 One method that has a bug is the method `averageWithoutLowest()` in the ArrayExamples.java file. 
 
-The following JUnit tester code demonstrates the bug:
+The following JUnit tester code demonstrates the bug with a failure-inducing input:
 ```
   @Test
-  public void testAverageWithoutLowest() {
+  public void testAverageWithoutLowestFailure() {
     double[] input1 = {1.0, 2.0, 3.0, 4.0, 7.0, 1.0, 1.0};
     assertEquals(4.0, ArrayExamples.averageWithoutLowest(input1), 0.0);
   }
 ```
+
+</br>
+
+The following JUnit tester code does not demonstrate the bug and does not have a failure:
+```
+  @Test
+  public void testAverageWithoutLowestNoFailure() {
+    double[] input2 = {1.0, 2.0, 3.0, 4.0, 7.0};
+    assertEquals(4.0, ArrayExamples.averageWithoutLowest(input2), 0.0);
+  }
+```
+
+</br>
+
+
+
+
 
 
 ## Part 3: Conclusion
