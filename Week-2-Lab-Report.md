@@ -48,14 +48,19 @@ class StringServer {
 ```
 The screenshots of using /add-message
 
+![image](images/add-message-test.png)
+
+Screenshot 1:
+The method main method is executed when StringServer.java is run on my computer. The main method has the argument `args`, which takes the arguments in the command prompt. This will be important because the first argument `args[0]` is used to determine the port number for the server. In the main method is the method call `Server.start(port, new Handler());`. The start method call is what starts the server, and it takes in two arguments. The first argument is the port number, which, as mentioned before, is taken from the command prompt argument. In this case, I entered 7011 as the server number. The second argument is a new Handler object in order to handle requests in the URL. The Handler class has a single method called handleRequest that returns a string to be displayed on the website. The string is determined by what is in the path and query in the URL. In order to add a message, the path must include `/add-message`                                         
+
+![image](images/add-message-test2.png)
+
 
 
 ## Part 2: Identifying and Fixing Bugs
 
 ---------------------------------------------------------
-![image](images/add-message-test.png)
 
-![image](images/add-message-test2.png)
 
 
 ## Part 3: Conclusion
