@@ -47,7 +47,7 @@ class StringServer {
 }
 ```
 
-</br> </br>
+<br/> <br/>
 
 The screenshots of using /add-message
 
@@ -66,7 +66,7 @@ The exact request I typed in was: `http://ieng6-203.ucsd.edu:7011/add-message?s=
 
 The Handler has a String instance variable `currentString`, which is initially just an empty string. However, every time a message is added through the query in the URL, the variable is updated so that the message string is concatenated to `currentString` on a new line (except for the first time). In this screenshot, because this is the first time a message is added, the string is concatenated without a new line. 
 
-</br> </br>
+<br/> <br/>
 
 ![image](images/add-message-test2.png)
 
@@ -78,7 +78,7 @@ How are you
 ```
 The exact request I typed in was: `http://ieng6-203.ucsd.edu:7011/add-message?s=How are you`
 
-</br> </br>
+<br/> <br/>
 
 ## Part 2: Identifying and Fixing Bugs
 
@@ -95,7 +95,7 @@ The following JUnit tester code demonstrates the bug with a failure-inducing inp
   }
 ```
 
-</br>
+<br/>
 
 The following JUnit tester code does not demonstrate the bug and does not have a failure:
 ```
@@ -106,7 +106,7 @@ The following JUnit tester code does not demonstrate the bug and does not have a
   }
 ```
 
-</br>
+<br/>
 
 
 
