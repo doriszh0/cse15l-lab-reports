@@ -46,6 +46,9 @@ class StringServer {
     }
 }
 ```
+
+</br> </br>
+
 The screenshots of using /add-message
 
 ![image](images/add-message-test.png)
@@ -59,16 +62,40 @@ The Handler class has a single method called handleRequest with a URI object `ur
 
 In order to add a message, the path must include `/add-message` after the domain, followed by the query in the format of `?s=`. The argument that follows the equal sign (the delimiter) is the string that is added to the existing string, and then it is all displayed on the website. In this screenshot, I entered `Hello` as the query argument, and you can see that it is now on the website.
 
+The exact request I typed in was: `http://ieng6-203.ucsd.edu:7011/add-message?s=Hello`
+
 The Handler has a String instance variable `currentString`, which is initially just an empty string. However, every time a message is added through the query in the URL, the variable is updated so that the message string is concatenated to `currentString` on a new line (except for the first time). In this screenshot, because this is the first time a message is added, the string is concatenated without a new line. 
+
+</br> </br>
 
 ![image](images/add-message-test2.png)
 
+Screenshot 2:
+Because the set up of the server such as the port number and calling the server start method is already explained under Screenshot 1, I will go straight to the string argument in the query. In this screenshot, I entered `How are you` as the query argument in the URL. Therefore, the handleRequest takes the string argument and concatenates it to the currentString on a new line. Because the currentString already has `Hello` in it, as seen from the previous screenshot, the entire string displayed on the website is:
+```
+Hello
+How are you
+```
+</br>
 
+The exact request I typed in was: `http://ieng6-203.ucsd.edu:7011/add-message?s=How are you`
+
+</br> </br>
 
 ## Part 2: Identifying and Fixing Bugs
 
 ---------------------------------------------------------
 
+One method that has a bug is the method `averageWithoutLowest()` in the ArrayExamples.java file. 
+
+The following JUnit tester code demonstrates the bug:
+```
+  @Test
+  public void testAverageWithoutLowest() {
+    double[] input1 = {1.0, 2.0, 3.0, 4.0, 7.0, 1.0, 1.0};
+    assertEquals(4.0, ArrayExamples.averageWithoutLowest(input1), 0.0);
+  }
+```
 
 
 ## Part 3: Conclusion
