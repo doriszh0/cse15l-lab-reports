@@ -115,7 +115,8 @@ The following screenshot demonstrates the two testers being run:
 <br/>
 
 ![image](images/average-without-lowest-test.png)
-> As you can see from the screenshot, the first test with the failure-inducing output expects an output of 4.0, but instead gets the actual output of 
+> As you can see from the screenshot, the first test with the failure-inducing output states that it `expected:<4.0> but was:<2.6666666666666665>`. If you calculate the average with the bug in mind, you get `(2 + 3 + 4 + 7) / 6`, which does indeed equal 2.66666... (repeating). 
+
 <br/>
 
 Method with Bug:
@@ -151,9 +152,9 @@ Method with Bug Fixed:
     return sum / (arr.length - count);
   }
 ```
+> The variable `count` is added to keep track of the number of lowest values removed. Count is then subtracted from the array length instead of `1`.
 
-
-
+The fixed method works because the added variable `count` is used instead of the constant `1` in order to account for multiple lowest values being removed. In the for loop where the method is adding the doubles in the array, it uses an if statement to determine if the double is the lowest or not. Before the fix, it only used the `(num != lowest)` condition to add the non-lowest values. After the fix, the method now also has an else statement for the if condition that increases the count (of lowest values) by one. By adding `count` and the else statement, the method can now keep track of the number of lowest values. Therefore, when dividing the total sum by the number of values added, the actual number of values added is `arr.length - count` and not `arr.length - 1`. 
 
 
 ## Part 3: Conclusion
