@@ -84,7 +84,7 @@ The exact request I typed in was: `http://ieng6-203.ucsd.edu:7011/add-message?s=
 
 ---------------------------------------------------------
 
-One method that has a bug is the method `averageWithoutLowest()` in the ArrayExamples.java file. 
+One method that has a bug is the method `averageWithoutLowest()` in the ArrayExamples.java file. The bug occurs when there are multiple doubles that have the lowest value in the input array. This is because the method only accounts for having multiple lowest doubles when adding the doubles together (leaves out all of the lowest doubles), and not when dividing the total by the number of values added to get the average (Always divides by `array length - 1`, which means it only accounts for removing one value). 
 
 The following JUnit tester code demonstrates the bug with a failure-inducing input:
 ```
@@ -94,6 +94,7 @@ The following JUnit tester code demonstrates the bug with a failure-inducing inp
     assertEquals(4.0, ArrayExamples.averageWithoutLowest(input1), 0.0);
   }
 ```
+> `input1` has multiple lowest values in its array (three `1.0`s), which means it is a failure-inducing input.
 
 <br/>
 
@@ -105,9 +106,51 @@ The following JUnit tester code does not demonstrate the bug and does not have a
     assertEquals(4.0, ArrayExamples.averageWithoutLowest(input2), 0.0);
   }
 ```
+> `input2` only has one lowest value in its array (one `1.0`s), which means it is not a failure-inducing input.
 
 <br/>
 
+The following screenshot demonstrates the two testers being run:
+
+<br/>
+
+![image](images/average-without-lowest-bug-test.png)
+> As you can see from the screenshot, the first test with the failure-inducing output expects an output of 4.0, but instead gets the actual output of 
+<br/>
+
+Method with Bug:
+```
+  static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+
+Method with Bug Fixed:
+```
+  static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    int count = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+      else {count++;}
+    }
+    return sum / (arr.length - count);
+  }
+```
 
 
 
