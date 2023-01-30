@@ -147,7 +147,7 @@ Method with Bug Fixed:
     int count = 0;
     for(double num: arr) {
       if(num != lowest) { sum += num; }
-      else {count++;}
+      else { count++; }
     }
     return sum / (arr.length - count);
   }
