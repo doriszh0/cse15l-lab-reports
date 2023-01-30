@@ -114,7 +114,7 @@ The following screenshot demonstrates the two testers being run:
 
 <br/>
 
-![image](images/average-without-lowest-bug-test.png)
+![image](images/average-without-lowest-test.png)
 > As you can see from the screenshot, the first test with the failure-inducing output expects an output of 4.0, but instead gets the actual output of 
 <br/>
 
