@@ -106,7 +106,7 @@ The following JUnit tester code does not demonstrate the bug and does not have a
     assertEquals(4.0, ArrayExamples.averageWithoutLowest(input2), 0.0);
   }
 ```
-> `input2` only has one lowest value in its array (one `1.0`s), which means it is not a failure-inducing input.
+> `input2` only has one lowest value in its array (one `1.0`), which means it is not a failure-inducing input.
 
 <br/>
 
@@ -156,9 +156,13 @@ Method with Bug Fixed:
 
 The fixed method works because the added variable `count` is used instead of the constant `1` in order to account for multiple lowest values being removed. In the for loop where the method is adding the doubles in the array, it uses an if statement to determine if the double is the lowest or not. Before the fix, it only used the `(num != lowest)` condition to add the non-lowest values. After the fix, the method now also has an else statement for the if condition that increases the count (of lowest values) by one. By adding `count` and the else statement, the method can now keep track of the number of lowest values. Therefore, when dividing the total sum by the number of values added, the actual number of values added is `arr.length - count` and not `arr.length - 1`. 
 
+<br/> <br/>
+
 
 ## Part 3: Conclusion
 
 ---------------------------------------------------------
+
+I learned a lot from both Week 2 and 3, but especially from Week 2. I found it really interesting to learn how a web server can be set up because I had no idea how it worked. I always thought it would be too complicated for me to understand, but seeing the classes and methods needed to set up the server made me realize that it is just code like any other code. I understood all the code in NumberServer.java and was even able to write a part of my own web server, such as the one for this lab report, which I would not have been able to do before. For instance, I learned how the URL's path and query is retrieved through getPath() and getQuery(), as well as how the input(s) after the query are separated using a delimiter and placed into an array to be used. I also took a look at Server.java, and although it was much harder to understand, I still learned about the HttpServer class and how it is used.  
 
 
