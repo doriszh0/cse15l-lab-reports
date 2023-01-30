@@ -49,7 +49,7 @@ class StringServer {
 
 <br/> <br/>
 
-The screenshots of using /add-message
+The screenshots of using `/add-message`
 
 ![image](images/add-message-test.png)
 
