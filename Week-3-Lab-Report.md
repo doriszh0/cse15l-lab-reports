@@ -1,6 +1,7 @@
 # Week 3 Lab Report
 
 ## Investigating the command `find`
+> Note: For all commands, I am starting in the `skill-demo1-server` directory, and the `skill-demo1-data` directory is inside of the `skill-demo1-server` directory, and then the `written_2` directory is inside of the `skill-demo1-data` directory.
 
 ## Part 1: Using `find` with `-name` and `-type`
 
@@ -152,11 +153,19 @@ You can use `-delete` to delete the item that you are looking for!
 Example 1:
 
 ```
+$ cd written_2/non-fiction/OUP/
+
+$ mkdir RybczynskiCopy
+
+$ cp Rybczynski/ch1.txt RybczynskiCopy
+
+$ find RybczynskiCopy -name "*.txt" -delete
 ```
 
 Example 2:
 
 ```
+$ find RybczynskiCopy -delete
 ```
 
 <br/> <br/>
@@ -172,8 +181,17 @@ You can use `-exec` to ___ the item that you are looking for!
 Example 1:
 
 ```
+$ find skill-demo1-data/ -type f -exec grep -l "Lucayans" {} \;
+
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
 
+Example 2:
+
 ```
+$ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -name "ch1.txt" -exec touch -m {} \;
+
+$ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch1.txt
 ```
 
