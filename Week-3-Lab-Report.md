@@ -10,7 +10,7 @@
 
 ---------------------------------------------------------
 
-You can use both `-name` and `-type` to narrow down the data item that you are looking for!
+You can use both `-name` and `-type` to narrow down the files and directoris that you are looking for!
 
 <br/>
 
@@ -30,7 +30,7 @@ skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch9.txt
 ```
 In the code block above, I am finding anything that has `.txt` at the end of the name AND is also a file. The `f` refers to type file, but there are other options as well, the other more-likely-to-be-used choice being `d` for type directory. Also, to be clear, if there is only a space separating two tests (tests refer to conditions for `find` such as `-name` and `-type`), then it is assumed that there is an operator `-and` in between the two tests, meaning both tests have to be fulfilled. Overall, because you can use patterns to specify certain data items (in this case I am only looking for `.txt` files), as well specify exactly what data type you want (usually either a file or directory), I can easily look through directories to find what I want. 
 
-> Although it may seem redundant to specify the data item to be type file when I am already looking for names that end in `.txt`, which is a file format, you never know if someone ever decides to name a folder  `{insert-name-here}.txt` for some weird reason.
+> Although it may seem redundant to specify the data type to be type file when I am already looking for names that end in `.txt`, which is a file format, you never know if someone ever decides to name a folder  `{insert-name-here}.txt` for some weird reason.
 
 <br/>
 
@@ -85,7 +85,7 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Portugal-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/PuertoRico-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-History.txt
 ```
-In the code block above, I am finding anything that has a name in the format of `History{insert-name-here}` OR `{insert-name-here}History` AND is also a file in the `travel_guides` directory. In this case, I used the operator `-or` in between the two name tests, so that I would get data items in either format. After a data item fulfills one of the name specifications, it is then checked whether or not it is a file (the precedence of the evaluation of the operations is just left to right). Overall, because you can use patterns to specify certain data items (in this case I am looking for a specific formatting for the name), as well specify exactly what data type you want (usually either a file or directory), I can easily look through directories to find what I want. 
+In the code block above, I am finding anything that has a name in the format of `History{insert-name-here}` OR `{insert-name-here}History` AND is also a file in the `travel_guides` directory. In this case, I used the operator `-or` in between the two name tests, so that I would get it in either format. After a data item fulfills one of the name specifications, it is then checked whether or not it is a file (the precedence of the evaluation of the operations is just left to right). Overall, because you can use patterns to specify certain data items (in this case I am looking for a specific formatting for the name), as well specify exactly what data type you want (usually either a file or directory), I can easily look through directories to find what I want. 
 
 <br/> <br/>
 
@@ -94,7 +94,7 @@ In the code block above, I am finding anything that has a name in the format of 
 
 ---------------------------------------------------------
 
-You can use `-atime` and `-ctime` to narrow down the data item that you are looking for!
+You can use `-atime` and `-ctime` to narrow down the files and directories that you are looking for!
 
 <br/>
 
@@ -116,7 +116,7 @@ skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -atime +1
 
 ```
-In the code block above, I am looking for files in the `Kauffman` directory that I have accessed less than 1 day ago. I currently have my VSCode open for all these files, so it makes sense that all the files in `Kauffman` would appear, as I am accessing them right now. In the second code block above, I am looking for files in the `Kauffman` directory that I have accessed more than 1 day ago (see note below for clarification on actual time). Again, because I am currently accessing the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, to explain exactly how the format of `-atime` works, it uses `n` * 24 hours to determine the numerical value for the time, as well as the `+`, or `-`, or lack of any sign to determine the time to be more than, or less than, or equal to, respectively, with the time value specified. Overall, with `-atime` you can easily find files you have recently accessed, or perhaps even remove files you have not accessed in a long time and don't need anymore.
+In the code block above, I am looking for files (and directories) in the `Kauffman` directory that I have accessed less than 1 day ago. I currently have my VSCode open for all these files, so it makes sense that all the files in `Kauffman` would appear, as I am accessing them right now. In the second code block above, I am looking for files in the `Kauffman` directory that I have accessed more than 1 day ago (see note below for clarification on actual time). Again, because I am currently accessing the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, to explain exactly how the format of `-atime` works, it uses `n` * 24 hours to determine the numerical value for the time, as well as the `+`, or `-`, or lack of any sign to determine the time to be more than, or less than, or equal to, respectively, with the time value specified. Overall, with `-atime` you can easily find files you have recently accessed, or perhaps even remove files you have not accessed in a long time and don't need anymore.
 
 > An important note about how the time-based tests work is that fractions/decimals are rounded down to a whole number, which means, for example, if you put `-atime +1`, it means that you actually need to have accessed the file at least **2** days ago (even 1.999 days would round down to 1 day). 
 
@@ -140,7 +140,7 @@ skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
 
 ```
-In the code block above, I am looking for files in the `Kauffman` directory that I have changed more than 1 day ago (see note above for clarification on actual time). I have never changed the files before, except for when I cloned the files from GitHub, which was definitely more than 2 days ago, so it makes sense that all the files in `Kauffman` would appear. In the second code block above, I am looking for files in the `Kauffman `directory that I have changed less than 1 day ago. Again, because I have never changed the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, `-ctime` works basically the exact same way as `-atime`, except it checks for the change/modify time instead of the access time. Overall, with `-ctime`, similar to `-atime`, you can easily find files you have recently changed, or remove files you have not changed in a long time and don't need anymore.
+In the code block above, I am looking for files (and directories) in the `Kauffman` directory that I have changed more than 1 day ago (see note above for clarification on actual time). I have never changed the files before, except for when I cloned the files from GitHub, which was definitely more than 2 days ago, so it makes sense that all the files in `Kauffman` would appear. In the second code block above, I am looking for files in the `Kauffman `directory that I have changed less than 1 day ago. Again, because I have never changed the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, `-ctime` works basically the exact same way as `-atime`, except it checks for the change/modify time instead of the access time. Overall, with `-ctime`, similar to `-atime`, you can easily find files you have recently changed, or remove files you have not changed in a long time and don't need anymore.
 
 
 <br/>
@@ -155,7 +155,7 @@ In the code block above, I am looking for files in the `Kauffman` directory that
 
 ---------------------------------------------------------
 
-You can use `-delete` to delete the data item that you are looking for!
+You can use `-delete` to delete the files and directories that you are looking for!
 
 <br/>
 
@@ -202,7 +202,7 @@ In the code block above, after executing `-delete` in Example 1, I am left with 
 
 ---------------------------------------------------------
 
-You can use `-exec` to execute command line arguments on the data item that you are looking for!
+You can use `-exec` to execute command line arguments on the files and directories that you are looking for!
 
 <br/>
 
