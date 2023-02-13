@@ -100,7 +100,6 @@ Example 1:
 
 ```
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -atime -1
-
 skill-demo1-data/written_2/non-fiction/OUP/Kauffman/
 skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch1.txt
 skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch10.txt
@@ -147,7 +146,7 @@ $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
 ```
 > Here I included two code blocks to fully demonstrate how `-ctime` works. 
 
-In the first code block above, I am looking for  filesin the Kauffman directory that I have changed more than 1 day ago (see note above for clarification on actual time). I have never changed the files before, except for when I cloned the files from GitHub, which was definitely more than 2 days ago, so it makes sense that all the files in `Kauffman` would appear. In the second code block above, I am looking for files in the Kauffman directory that I have changed less than 1 day ago. Again, because I have never changed the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, `-ctime` works basically the exact same way as `-atime`, except it checks for the change/modify time instead of the access time. Overall, with `-ctime`, similar to `-atime`, you can easily find files you have recently changed, or remove files you have not changed in a long itme and don't need anymore.
+In the first code block above, I am looking for files in the `Kauffman` directory that I have changed more than 1 day ago (see note above for clarification on actual time). I have never changed the files before, except for when I cloned the files from GitHub, which was definitely more than 2 days ago, so it makes sense that all the files in `Kauffman` would appear. In the second code block above, I am looking for files in the `Kauffman `directory that I have changed less than 1 day ago. Again, because I have never changed the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, `-ctime` works basically the exact same way as `-atime`, except it checks for the change/modify time instead of the access time. Overall, with `-ctime`, similar to `-atime`, you can easily find files you have recently changed, or remove files you have not changed in a long itme and don't need anymore.
 
 
 <br/>
@@ -183,7 +182,9 @@ $ find RybczynskiCopy -name "*.txt"
 ```
 > I didn't want to actually delete any of the actual files in `written_2`, so I created a new directory called `RybczynskiCopy`, and copied the file `ch1.txt` that was in the original `Rybczynski` directory to `RybczynskiCopy`. 
 
-In the code block above, after making a copy to delete safely, and using `find` with `-name` to check that the copy worked (`ch1.txt` is outputted as expected), I then used `find` with `-name` to specify I wanted to delete all the `.txt` files in the directory using `find` with `-delete`, which in this case, would just be `ch1.txt`. I then use `find` with `-name` again to check that the deletion worked, and because there is no output, that means `ch1.txt` was successfully deleted. Overall, `-delete` just makes it easy to delete the files that you are looking for.  
+In the code block above, after making a copy to delete safely, and using `find` with `-name` to check that the copy worked (`ch1.txt` is outputted as expected), I then used `find` with `-name` to specify I wanted to delete all the `.txt` files in the directory with `-delete`, which in this case, would just be `ch1.txt`. I then use `find` with `-name` again to check that the deletion worked, and because there is no output, that means `ch1.txt` was successfully deleted. Overall, `-delete` just makes it easy to delete the files that you are looking for.  
+
+<br/>
 
 Example 2:
 
@@ -197,7 +198,7 @@ $ find RybczynskiCopy
 find: ‘RybczynskiCopy’: No such file or directory
 ```
 
-In the code block above, after executing the `find` commands in Example 1, I am left with just the directory `RybczynskiCopy`. I first prove that the directory still exists with just `find`, and then I delete it using `find` with `-delete`. After deleting it, I use `find` again to check that the deletion worked, and the output of `no such file or directory` means that `RybczynskiCopy` was successfully deleted. Overall, you can also use `-delete` to delete specified directories and all of the files inside of it as well.  
+In the code block above, after executing `-delete` in Example 1, I am left with just the empty directory `RybczynskiCopy`. I first prove that the directory still exists with just `find`, and then I delete it using `find` with `-delete`. After deleting it, I use `find` again to check that the deletion worked, and the output of `No such file or directory` means that `RybczynskiCopy` was successfully deleted. Overall, you can also use `-delete` to delete specified directories and all of the files inside of it all at once too.  
 
 <br/> <br/>
 
@@ -212,10 +213,12 @@ You can use `-exec` to execute command line arguments on the data item that you 
 Example 1:
 
 ```
-$ find skill-demo1-data/ -type f -exec grep -l "Lucayans" {} \;
-
+$ find skill-demo1-data/written_2/ -type f -exec grep -l "Lucayans" {} \;
 skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
+In the code block above, I first look for all the files in `written_2`, and then I use `exec` to pass each file as a command line argument for the command `grep`. With `grep -l`, I list the file name(s) that have the word "Lucayans" in it. How `-exec` works is that you write the command(s) right after the `-exec`, where `{}` is the "placeholder" for where the file name will be passed to, and `;` (which needs to be escaped with a `\` backslash) stops `exec` from taking command arguments. Overall, `exec` provides an alternate way to take the output from `find` and use them as command line arguments for other commands, such as `grep`.
+
+<br/>
 
 Example 2:
 
@@ -225,4 +228,5 @@ $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -name "ch1.txt" -exe
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
 skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch1.txt
 ```
+In the code block above, I first look for the file in the directory `Kauffman` with the name `ch1.txt`, and then I use `exec` to pass the file as a command line argument for the command `touch`. With `touch -m`, I updated the time I last changed `ch1.txt` to right now. I then check that the change time has been updated by using `-ctime -1`, which looks for all the files in the `Kauffman` directory that have been changed less than 1 day ago. As shown in Part 2, originally, when I used  `-ctime -1` in the `Kauffman` directory, nothing appeared because I had never changed the files other than when I created them. However, after I touched `ch.1.txt` to update the change time to now, `ch1.txt` becomes the only file that is outputted when `-ctime -1` is used. Overall, `exec` provides an alternate way to take the output from `find` and use it as command line arguments for other commands, such as `touch`.
 
