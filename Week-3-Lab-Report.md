@@ -177,7 +177,7 @@ $ find RybczynskiCopy -name "*.txt"
 ```
 > I didn't want to actually delete any of the actual files in `written_2`, so I created a new directory called `RybczynskiCopy`, and copied the file `ch1.txt` that was in the original `Rybczynski` directory to `RybczynskiCopy`. 
 
-In the code block above, after making a copy to delete safely, and using `find` with `-name` to check that the copy worked (`ch1.txt` is outputted as expected), I then used `find` with `-name` to specify I wanted to delete all the `.txt` files in the directory with `-delete`, which in this case, would just be `ch1.txt`. I then use `find` with `-name` again to check that the deletion worked, and because there is no output, that means `ch1.txt` was successfully deleted. Overall, `-delete` just makes it easy to delete the files that you are looking for.  
+In the code block above, after making a copy to delete safely, and using `find -name` to check that the copy worked (`ch1.txt` is outputted as expected), I then used `find -name` to specify I wanted to delete all the `.txt` files in the directory with `-delete`, which in this case, would just be `ch1.txt`. I then use `find -name` again to check that the deletion worked, and because there is no output, that means `ch1.txt` was successfully deleted. Overall, `-delete` just makes it easy to delete the files that you are looking for.  
 
 <br/>
 
@@ -193,7 +193,7 @@ $ find RybczynskiCopy
 find: ‘RybczynskiCopy’: No such file or directory
 ```
 
-In the code block above, after executing `-delete` in Example 1, I am left with just the empty directory `RybczynskiCopy`. I first prove that the directory still exists with just `find`, and then I delete it using `find` with `-delete`. After deleting it, I use `find` again to check that the deletion worked, and the output of `No such file or directory` means that `RybczynskiCopy` was successfully deleted. Overall, you can also use `-delete` to delete specified directories and all of the files inside of it all at once too.  
+In the code block above, after executing `-delete` in Example 1, I am left with just the empty directory `RybczynskiCopy`. I first prove that the directory still exists with just `find`, and then I delete it using `find -delete`. After deleting it, I use `find` again to check that the deletion worked, and the output of `No such file or directory` means that `RybczynskiCopy` was successfully deleted. Overall, you can also use `-delete` to delete specified directories and all of the files inside of it all at once too.  
 
 <br/> <br/>
 
