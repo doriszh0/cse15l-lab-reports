@@ -3,6 +3,8 @@
 ## Investigating the command `find`
 > Note: For all commands, I am starting in the `skill-demo1-server` directory, and the `skill-demo1-data` directory is inside of the `skill-demo1-server` directory, and then the `written_2` directory is inside of the `skill-demo1-data` directory.
 
+<br/> <br/>
+
 ## Part 1: Using `find` with `-name` and `-type`
 
 ---------------------------------------------------------
