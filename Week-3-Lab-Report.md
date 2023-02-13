@@ -30,11 +30,12 @@ In the code block above, I am finding anything that has ".txt" at the end of the
 
 > (Although it may seem redundant to specify the data item to be type file when I am already looking for names that end in ".txt", which is a file format, you never know if someone ever decides to name a folder "{insert name here}.txt" for some weird reason.)
 
+<br/>
 
 Example 2: 
 
 ```
-$ find skill-demo1-data/written_2/travel_guides/ -name "History*" -or -name "*-History*" -type f
+$ find skill-demo1-data/written_2/travel_guides/ -name "History*" -or -name "*History*" -type f
 
 skill-demo1-data/written_2/travel_guides/berlitz1/HistoryDublin.txt
 skill-demo1-data/written_2/travel_guides/berlitz1/HistoryEdinburgh.txt
@@ -83,6 +84,7 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Portugal-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/PuertoRico-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-History.txt
 ```
+In the code block above, I am finding anything that has a name in the format of "History{Insert name here}" OR "{Insert name here}History" AND is also a file. In this case, I used the operator `-or` in between the two name tests, so that I would get data items in either format. After a data item fulfills one of the name specifications, it is then checked whether or not is a file (The precedence of the evaluation of the operations is just left to right). Overall, because you can use patterns to specify certain data items (in this case I am looking for a specific formatting for the name), as well specify exactly what data type you want (usually either a file or directory), I can easily look through directories to find what I want. 
 
 <br/> <br/>
 
