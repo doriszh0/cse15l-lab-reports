@@ -78,3 +78,54 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Portugal-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/PuertoRico-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-History.txt
 ```
+
+## Part 2: Using `find` with access/change times such as `-atime` and `-ctime`
+
+---------------------------------------------------------
+
+You can use `-atime` and `-ctime` to narrow down the item that you are looking for!
+
+<br/>
+
+Example 1:
+
+```
+$ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -atime -1
+
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch1.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch10.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch3.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch4.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch5.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch6.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch7.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch8.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
+```
+```
+$ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -atime +1
+
+```
+
+```
+$ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime +1
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch1.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch10.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch3.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch4.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch5.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch6.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch7.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch8.txt
+skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
+```
+
+```
+$ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
+
+```
+
+
+> Note: there is also `amin` and `cmin`, which is based on minutes, rather than days.
