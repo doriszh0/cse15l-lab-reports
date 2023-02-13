@@ -117,6 +117,11 @@ skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -atime +1
 
 ```
+> Here I included two code blocks to fullt demonstrate how `-atime` works. 
+
+In the first code block above, I am looking for files in the Kauffman directory that I have accessed less than 1 day ago. I currently have my VSCode open for all these files, so it makes sense that all the files in `Kauffman` would appear, as I am accessing them right now. In the second code block above, I am looking for files in the Kauffman directory that I have accessed more than 1 day ago (see note below for clarification on actual time). Again, because I am currently accessing the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, to explain exactly how the format of `-atime` works, it uses `n` * 24 hours to determine the numerical value for the time, as well as the `+`, or `-`, or lack of any sign to determine the time to be more than, or less than, or equal to, respectively, with the time value specified. 
+
+> An important note about how the time-based tests work is that fractions/decimals are rounded down to a whole number, which means, for example, if you put `-atime +1`, it means that you actually need to have accessed the file at least **2** days ago (even 1.999 days would round down to 1 day). 
 
 <br/>
 
@@ -141,9 +146,12 @@ $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
 
 ```
 
+In the first code block above, I am looking for  filesin the Kauffman directory that I have changed more than 1 day ago (see note above for clarification on actual time). I have never changed the files before, except for when I cloned the files from GitHub, which was definitely more than 2 days ago, so it makes sense that all the files in `Kauffman` would appear. In the second code block above, I am looking for files in the Kauffman directory that I have changed less than 1 day ago. Again, because I have never changed the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, `-ctime` works basically the exact same way as `-atime`, except it checks for the change/modify time instead of the access time. 
+
+
 <br/>
 
-> Note: there is also `amin` and `cmin`, which is based on minutes, rather than days.
+> Some Extra Information: There is also `amin` and `cmin`, which are based on minutes, rather than days. So typing `-amin +30` will give files last accessed more than 30 minutes ago. 
 
 
 <br/> <br/>
