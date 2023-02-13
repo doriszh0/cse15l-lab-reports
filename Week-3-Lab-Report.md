@@ -145,7 +145,7 @@ In the code block above, I am looking for files in the `Kauffman` directory that
 
 <br/>
 
-> Some Extra Information: There is also `amin` and `cmin`, which are based on minutes, rather than days. So typing `-amin +30` will give files last accessed more than 30 minutes ago. 
+> Some Extra Information: There is also `-amin` and `-cmin`, which are based on minutes, rather than days. So typing `-amin +30` will give files last accessed more than 30 minutes ago. 
 
 
 <br/> <br/>
@@ -197,7 +197,7 @@ In the code block above, after executing `-delete` in Example 1, I am left with 
 
 <br/> <br/>
 
-## Part 4: Using `find` with `exec`
+## Part 4: Using `find` with `-exec`
 > Sources: https://math2001.github.io/article/bashs-find-command/ and https://man7.org/linux/man-pages/man1/find.1.html
 
 ---------------------------------------------------------
