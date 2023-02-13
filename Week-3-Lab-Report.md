@@ -94,7 +94,7 @@ In the code block above, I am finding anything that has a name in the format of 
 
 ---------------------------------------------------------
 
-You can use `-atime` and `-ctime` to narrow down the item that you are looking for!
+You can use `-atime` and `-ctime` to narrow down the data item that you are looking for!
 
 <br/>
 
@@ -162,7 +162,7 @@ In the first code block above, I am looking for  filesin the Kauffman directory 
 
 ---------------------------------------------------------
 
-You can use `-delete` to delete the item that you are looking for!
+You can use `-delete` to delete the data item that you are looking for!
 
 <br/>
 
@@ -190,7 +190,7 @@ $ find RybczynskiCopy -delete
 
 ---------------------------------------------------------
 
-You can use `-exec` to ___ the item that you are looking for!
+You can use `-exec` to execute command line arguments on the data item that you are looking for!
 
 <br/>
 
