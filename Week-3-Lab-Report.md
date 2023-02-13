@@ -79,6 +79,8 @@ skill-demo1-data/written_2/travel_guides/berlitz2/PuertoRico-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-History.txt
 ```
 
+<br/> <br/>
+
 ## Part 2: Using `find` with access/change times such as `-atime` and `-ctime`
 
 ---------------------------------------------------------
@@ -103,10 +105,15 @@ skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch7.txt
 skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch8.txt
 skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
 ```
+
 ```
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -atime +1
 
 ```
+
+<br/>
+
+Example 2:
 
 ```
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime +1
@@ -127,5 +134,46 @@ $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
 
 ```
 
+<br/>
 
 > Note: there is also `amin` and `cmin`, which is based on minutes, rather than days.
+
+
+<br/> <br/>
+
+## Part 3: Using `find` with `-delete`
+
+---------------------------------------------------------
+
+You can use `-delete` to delete the item that you are looking for!
+
+<br/>
+
+Example 1:
+
+```
+```
+
+Example 2:
+
+```
+```
+
+<br/> <br/>
+
+## Part 4: Using `find` with `exec`
+
+---------------------------------------------------------
+
+You can use `-exec` to ___ the item that you are looking for!
+
+<br/>
+
+Example 1:
+
+```
+```
+
+```
+```
+
