@@ -6,6 +6,7 @@
 <br/> <br/>
 
 ## Part 1: Using `find` with `-name` and `-type`
+> Sources: https://math2001.github.io/article/bashs-find-command/ and https://man7.org/linux/man-pages/man1/find.1.html
 
 ---------------------------------------------------------
 
@@ -89,6 +90,7 @@ In the code block above, I am finding anything that has a name in the format of 
 <br/> <br/>
 
 ## Part 2: Using `find` with access/change times such as `-atime` and `-ctime`
+> Sources: https://math2001.github.io/article/bashs-find-command/ and https://man7.org/linux/man-pages/man1/find.1.html
 
 ---------------------------------------------------------
 
@@ -149,6 +151,7 @@ In the first code block above, I am looking for files in the `Kauffman` director
 <br/> <br/>
 
 ## Part 3: Using `find` with `-delete`
+> Sources: https://math2001.github.io/article/bashs-find-command/ and https://man7.org/linux/man-pages/man1/find.1.html
 
 ---------------------------------------------------------
 
@@ -195,6 +198,7 @@ In the code block above, after executing `-delete` in Example 1, I am left with 
 <br/> <br/>
 
 ## Part 4: Using `find` with `exec`
+> Sources: https://math2001.github.io/article/bashs-find-command/ and https://man7.org/linux/man-pages/man1/find.1.html
 
 ---------------------------------------------------------
 
