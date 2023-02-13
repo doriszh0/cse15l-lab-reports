@@ -17,7 +17,6 @@ Example 1:
 
 ```
 $ find skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ -name "*.txt" -type f
-
 skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch1.txt
 skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch14.txt
 skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch15.txt
@@ -38,7 +37,6 @@ Example 2:
 
 ```
 $ find skill-demo1-data/written_2/travel_guides/ -name "History*" -or -name "*History*" -type f
-
 skill-demo1-data/written_2/travel_guides/berlitz1/HistoryDublin.txt
 skill-demo1-data/written_2/travel_guides/berlitz1/HistoryEdinburgh.txt
 skill-demo1-data/written_2/travel_guides/berlitz1/HistoryEgypt.txt
@@ -119,9 +117,9 @@ skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -atime +1
 
 ```
-> Here I included two code blocks to fullt demonstrate how `-atime` works. 
+> Here I included two code blocks to fully demonstrate how `-atime` works. 
 
-In the first code block above, I am looking for files in the Kauffman directory that I have accessed less than 1 day ago. I currently have my VSCode open for all these files, so it makes sense that all the files in `Kauffman` would appear, as I am accessing them right now. In the second code block above, I am looking for files in the Kauffman directory that I have accessed more than 1 day ago (see note below for clarification on actual time). Again, because I am currently accessing the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, to explain exactly how the format of `-atime` works, it uses `n` * 24 hours to determine the numerical value for the time, as well as the `+`, or `-`, or lack of any sign to determine the time to be more than, or less than, or equal to, respectively, with the time value specified. 
+In the first code block above, I am looking for files in the Kauffman directory that I have accessed less than 1 day ago. I currently have my VSCode open for all these files, so it makes sense that all the files in `Kauffman` would appear, as I am accessing them right now. In the second code block above, I am looking for files in the Kauffman directory that I have accessed more than 1 day ago (see note below for clarification on actual time). Again, because I am currently accessing the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, to explain exactly how the format of `-atime` works, it uses `n` * 24 hours to determine the numerical value for the time, as well as the `+`, or `-`, or lack of any sign to determine the time to be more than, or less than, or equal to, respectively, with the time value specified. Overall, with `-atime` you can easily find files you have recently accessed, or perhaps even remove files you have not accessed in a long itme and don't need anymore.
 
 > An important note about how the time-based tests work is that fractions/decimals are rounded down to a whole number, which means, for example, if you put `-atime +1`, it means that you actually need to have accessed the file at least **2** days ago (even 1.999 days would round down to 1 day). 
 
@@ -147,8 +145,9 @@ skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch9.txt
 $ find skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ -ctime -1
 
 ```
+> Here I included two code blocks to fully demonstrate how `-ctime` works. 
 
-In the first code block above, I am looking for  filesin the Kauffman directory that I have changed more than 1 day ago (see note above for clarification on actual time). I have never changed the files before, except for when I cloned the files from GitHub, which was definitely more than 2 days ago, so it makes sense that all the files in `Kauffman` would appear. In the second code block above, I am looking for files in the Kauffman directory that I have changed less than 1 day ago. Again, because I have never changed the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, `-ctime` works basically the exact same way as `-atime`, except it checks for the change/modify time instead of the access time. 
+In the first code block above, I am looking for  filesin the Kauffman directory that I have changed more than 1 day ago (see note above for clarification on actual time). I have never changed the files before, except for when I cloned the files from GitHub, which was definitely more than 2 days ago, so it makes sense that all the files in `Kauffman` would appear. In the second code block above, I am looking for files in the Kauffman directory that I have changed less than 1 day ago. Again, because I have never changed the files in VSCode, it makes sense that no files would appear, which is exactly what happened. Also, `-ctime` works basically the exact same way as `-atime`, except it checks for the change/modify time instead of the access time. Overall, with `-ctime`, similar to `-atime`, you can easily find files you have recently changed, or remove files you have not changed in a long itme and don't need anymore.
 
 
 <br/>
@@ -169,20 +168,36 @@ You can use `-delete` to delete the data item that you are looking for!
 Example 1:
 
 ```
-$ cd written_2/non-fiction/OUP/
+$ cd skill-demo1-data/written_2/non-fiction/OUP/
 
 $ mkdir RybczynskiCopy
 
 $ cp Rybczynski/ch1.txt RybczynskiCopy
 
+$ find RybczynskiCopy -name "*.txt"
+RybczynskiCopy/ch1.txt
+
 $ find RybczynskiCopy -name "*.txt" -delete
+
+$ find RybczynskiCopy -name "*.txt"
 ```
+> I didn't want to actually delete any of the actual files in `written_2`, so I created a new directory called `RybczynskiCopy`, and copied the file `ch1.txt` that was in the original `Rybczynski` directory to `RybczynskiCopy`. 
+
+In the code block above, after making a copy to delete safely, and using `find` with `-name` to check that the copy worked (`ch1.txt` is outputted as expected), I then used `find` with `-name` to specify I wanted to delete all the `.txt` files in the directory using `find` with `-delete`, which in this case, would just be `ch1.txt`. I then use `find` with `-name` again to check that the deletion worked, and because there is no output, that means `ch1.txt` was successfully deleted. Overall, `-delete` just makes it easy to delete the files that you are looking for.  
 
 Example 2:
 
 ```
+$ find RybczynskiCopy
+RybczynskiCopy
+
 $ find RybczynskiCopy -delete
+
+$ find RybczynskiCopy
+find: ‘RybczynskiCopy’: No such file or directory
 ```
+
+In the code block above, after executing the `find` commands in Example 1, I am left with just the directory `RybczynskiCopy`. I first prove that the directory still exists with just `find`, and then I delete it using `find` with `-delete`. After deleting it, I use `find` again to check that the deletion worked, and the output of `no such file or directory` means that `RybczynskiCopy` was successfully deleted. Overall, you can also use `-delete` to delete specified directories and all of the files inside of it as well.  
 
 <br/> <br/>
 
