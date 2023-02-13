@@ -226,3 +226,7 @@ skill-demo1-data/written_2/non-fiction/OUP/Kauffman/ch1.txt
 ```
 In the code block above, I first look for the file in the directory `Kauffman` with the name `ch1.txt`, and then I use `exec` to pass the file as a command line argument for the command `touch`. With `touch -m`, I updated the time I last changed `ch1.txt` to right now. I then check that the change time has been updated by using `-ctime -1`, which looks for all the files in the `Kauffman` directory that have been changed less than 1 day ago. As shown in Part 2, originally, when I used  `-ctime -1` in the `Kauffman` directory, nothing appeared because I had never changed the files other than when I created them. However, after I touched `ch.1.txt` to update the change time to now, `ch1.txt` becomes the only file that is outputted when `-ctime -1` is used. Overall, `exec` provides an alternate way to take the output from `find` and use it as command line arguments for other commands, such as `touch`.
 
+<br/> <br/>
+---------------------------------------------------------
+
+## These are four different ways to use the command `find` with examples and explanations!
