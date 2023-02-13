@@ -85,7 +85,7 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Portugal-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/PuertoRico-History.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-History.txt
 ```
-In the code block above, I am finding anything that has a name in the format of `History{insert-name-here}` OR `{insert-name-here}History` AND is also a file. In this case, I used the operator `-or` in between the two name tests, so that I would get data items in either format. After a data item fulfills one of the name specifications, it is then checked whether or not it is a file (the precedence of the evaluation of the operations is just left to right). Overall, because you can use patterns to specify certain data items (in this case I am looking for a specific formatting for the name), as well specify exactly what data type you want (usually either a file or directory), I can easily look through directories to find what I want. 
+In the code block above, I am finding anything that has a name in the format of `History{insert-name-here}` OR `{insert-name-here}History` AND is also a file in the `travel_guides` directory. In this case, I used the operator `-or` in between the two name tests, so that I would get data items in either format. After a data item fulfills one of the name specifications, it is then checked whether or not it is a file (the precedence of the evaluation of the operations is just left to right). Overall, because you can use patterns to specify certain data items (in this case I am looking for a specific formatting for the name), as well specify exactly what data type you want (usually either a file or directory), I can easily look through directories to find what I want. 
 
 <br/> <br/>
 
