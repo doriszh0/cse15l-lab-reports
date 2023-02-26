@@ -20,7 +20,7 @@ Also, have a Google document with the GitHub lab7 repository clone link and the 
 ## Start the Timer!
 
 1. 
-Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`" 
+Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`". 
 > Alternate: Type "`<up><enter>`".
 
 <br/>
@@ -30,13 +30,13 @@ Copy the GitHub lab7 repository clone link by clicking to the Google Doc tab, hi
 <br/>
 OR clicking to the GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
 <br/>
-Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`"
+Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`".
 > Alternate: Type "`<up><enter>`".
 
 <br/>
 
 3. 
-Type "cd`<space>`l`<tab><enter>`"
+Type "cd`<space>`l`<tab><enter>`".
 <br/>
 Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl+c>`", 
 <br/>
