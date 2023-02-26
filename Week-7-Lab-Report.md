@@ -126,13 +126,16 @@ Type "git`<space>`push`<enter>`".
 
 ## Done!
 <img width="930" alt="step6-part2" src="https://user-images.githubusercontent.com/66851491/221411954-941ca798-f7af-4e84-b2b8-a77a853ba9fd.png">
+- This screenshot shows the changes I made from the steps!
 <br/>
 
 ## Before:
 <img width="686" alt="lab7-before" src="https://user-images.githubusercontent.com/66851491/221411977-8f757437-58c4-44bf-829c-27b125385a3f.png">
+- This is how the repository looked *before* the changes
 <br/>
 
 ## After: 
 <img width="689" alt="lab7-after" src="https://user-images.githubusercontent.com/66851491/221411984-7aeba523-f733-4377-b1a7-5325e070f50c.png">
+- This is how the repository looked *after* the changes
 <br/>
 
