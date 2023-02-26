@@ -84,9 +84,9 @@ Then, type "`<ctrl + />`43`<enter>`".
 - This takes me to line 43 of the file in nano
 
 <img width="960" alt="step4-part1" src="https://user-images.githubusercontent.com/66851491/221411861-6e234162-184f-4d97-b4a7-c41714e6a3be.png">
+
 <br/>
-Type "`<right>`" 12 times in a row (or hold down the right key until you reach the end of "index1" on line 43).
-<br/>
+Type "`<right>`" 12 times in a row (or hold down the right key until you reach the end of "index1" on line 43). <br/>
 Type "`<backspace>`2".
 - This fixes the mistake in the file
 
