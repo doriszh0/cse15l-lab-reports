@@ -19,9 +19,15 @@ Also, have a Google document with the GitHub lab7 repository clone link and the 
 
 ## Start the Timer!
 
-1. Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu" 
+1. 
+Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu" 
 > Alternate: Type `<up>`
 
 <br/>
 
-2. Copy the GitHub lab7 repository clone link by either clicking to the Google Doc tab, highlighting the link, `<ctrl><c>`, OR clicking to the GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button. Then, type "git clone `<ctrl><v>`"
+2. 
+Copy the GitHub lab7 repository clone link by clicking to the Google Doc tab, highlighting the link, `<ctrl><c>`, OR clicking to the GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button. 
+Then, type "git clone `<ctrl><v>`"
+> Alternate: Type `<up>`
+
+<br/>
