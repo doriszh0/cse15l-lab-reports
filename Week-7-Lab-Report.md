@@ -24,7 +24,9 @@ Also, have a Google document with your forked GitHub lab7 repository link, and t
 
 1. 
 Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`". 
+- This logs me into the remote server
 > Alternate: Type "`<up><enter>`".
+> - The command was 1 up in the search history, so typing `<up>` once should access it 
 <img width="960" alt="step1" src="https://user-images.githubusercontent.com/66851491/221411789-33e8df0b-e3a3-47f6-859d-2d8cfdc5135d.png">
 
 <br/>
@@ -32,31 +34,34 @@ Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`".
 2. 
 Copy your GitHub lab7 repository link by clicking to the Google Doc tab, highlighting the link, "`<ctrl + c>`", 
 <br/>
-OR clicking to your GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
+**OR** clicking to your GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
 <br/>
 Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
+- This clones my forked lab7 repository, I copy and paste the repository's SSH key
 > Alternate: Type "`<up><enter>`".
+> - The command was 1 up in the search history, so typing `<up>` once should access it 
 <img width="960" alt="step2" src="https://user-images.githubusercontent.com/66851491/221411830-ef5e0b95-b2e6-4cee-9022-769f8fa16a9e.png">
 
 <br/>
 
 3. 
 Type "cd`<space>`l`<tab><enter>`".
+- This changes the directory to the GitHub repository lab7, I used `<tab>` to autofill "lab7" from just "l"
 > Note: That is a lower case "L", not an upper case "I".
 
 Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl + c>`", 
 <br/>
-OR clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl + c>`".
+**OR** clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl + c>`".
 <br/>
 Then, click back to VSC and type "`<ctrl + v><enter>`".
 <br/>
 Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl + c>`", 
 <br/>
-OR clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl + c>`".
+**OR** clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl + c>`".
 <br/>
 Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from Google Doc), 
 <br/>
-OR "`<ctrl + v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Course Website).
+**OR** "`<ctrl + v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Course Website).
 > Alternate: Type "`<up><up><enter><up><up><up><enter><up><up><up><up><enter>`".
 <img width="960" alt="step3" src="https://user-images.githubusercontent.com/66851491/221411845-1c7b8a59-0e53-4855-8e50-47db5132d461.png">
 
