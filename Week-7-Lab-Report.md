@@ -26,7 +26,9 @@ Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`"
 <br/>
 
 2. 
-Copy the GitHub lab7 repository clone link by clicking to the Google Doc tab, highlighting the link, "`<ctrl+c>`", OR clicking to the GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
+Copy the GitHub lab7 repository clone link by clicking to the Google Doc tab, highlighting the link, "`<ctrl+c>`", 
+<br/>
+OR clicking to the GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
 <br/>
 Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`"
 > Alternate: Type "`<up><enter>`".
@@ -35,13 +37,19 @@ Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`"
 
 3. 
 Type "cd`<space>`l`<tab><enter>`"
-Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl+c>`", OR clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl+c>`".
+Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl+c>`", 
+<br/>
+OR clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl+c>`".
 <br/>
 Then, click back to VSC and type "`<ctrl+v><enter>`".
 <br/>
-Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl+c>`", OR clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl+c>`".
+Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl+c>`", 
 <br/>
-Then, click back to VSC and type "`<ctrl+v><enter>`" (if copied from Google Doc), OR "`<ctrl+v><space>`Lis`<tab>`Tests" (if copied from the Course Website).
+OR clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl+c>`".
+<br/>
+Then, click back to VSC and type "`<ctrl+v><enter>`" (if copied from Google Doc), 
+<br/>
+OR "`<ctrl+v><space>`Lis`<tab>`Tests" (if copied from the Course Website).
 > Alternate: Type "`<up><up><enter><up><up><up><enter><up><up><up><up><enter>`".
 
 <br/>
