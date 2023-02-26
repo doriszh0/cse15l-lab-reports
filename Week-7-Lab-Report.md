@@ -6,8 +6,10 @@ If a fork already exists of the lab7 repository, delete the original fork, then 
 Also, have a Google document with your forked GitHub lab7 repository link, and the JUnit compile and run commands in it. (If this is not allowed, then just have your GitHub lab7 repository tab ready and have Week 3 of the CS15L Course Website tab (has the JUnit commands) ready).
 
 > Note: I will be doing this challenge task on a fresh run, so it assumes that none of the commands are in the history. However, it is possible to do this challenge faster by having some of the commands done once to get them saved in the history, and then using the `<up>` key to get to the commands. (I will type the alternate version for the steps with this method as well) The order in which I would put the commands in history are this (Command at the very bottom would be the most recent command): 
+<br/>
 > On the personal computer:
 > * `ssh cs15lwi23ata@ieng6.ucsd.edu` the command for logging into the remote server
+> <br/>
 > On the remote server:
 > * `nano ListExamples.java` the command for opening the editor for ListExamples
 > * `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` the command for running the JUnit tests
