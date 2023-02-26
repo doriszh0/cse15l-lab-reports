@@ -16,5 +16,4 @@ If a fork already exists of the lab7 repository, delete the original fork, then 
 
 ## Start the Timer!
 
-
-1. 
+1. Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu" 
