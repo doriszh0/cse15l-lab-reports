@@ -26,8 +26,9 @@ Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu"
 <br/>
 
 2. 
-Copy the GitHub lab7 repository clone link by clicking to the Google Doc tab, highlighting the link, `<ctrl><c>`, OR clicking to the GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button. 
-Then, type "git clone `<ctrl><v>`"
+Copy the GitHub lab7 repository clone link by clicking to the Google Doc tab, highlighting the link, `<ctrl><c>`, OR clicking to the GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
+<br/>
+Then, type "git`<space>`clone`<space><ctrl><v>`"
 > Alternate: Type `<up>`
 
 <br/>
