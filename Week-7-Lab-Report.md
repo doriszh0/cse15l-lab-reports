@@ -41,7 +41,7 @@ Then, click back to VSC and type "`<ctrl+v><enter>`".
 <br/>
 Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl+c>`", OR clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl+c>`".
 <br/>
-Then, click back to VSC and type "`<ctrl+v><space>`Lis`<tab>`Tests".
+Then, click back to VSC and type "`<ctrl+v><enter>`" (if copied from Google Doc), OR "`<ctrl+v><space>`Lis`<tab>`Tests" (if copied from the Course Website).
 > Alternate: Type "`<up><up><enter><up><up><up><enter><up><up><up><up><enter>`".
 
 <br/>
