@@ -56,9 +56,11 @@ Then, type "`<ctrl+/>`43`<enter>`. 12
 <br/>
 Type "`<right>`" 12 times in a row (or hold down the right key until you reach the end of "index1" on line 43).
 <br/>
-Type "`<backspace>`" 6 times in a row, then "index2".
-<br/>
+Type "`<backspace>`2".
 <br/>
 Type "`<ctrl+x>`y`<enter>`". 
 
+<br/>
 
+5.
+Type "`<up><up><up>`
