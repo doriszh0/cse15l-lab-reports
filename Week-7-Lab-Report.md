@@ -61,7 +61,7 @@ Type "nano`<space>`L`<tab>`.j`<tab><enter>`".
 <br/>
 > Alternate: (Only for the line above, the lines below will be needed for both methods): Type "`<up><up><up><up><up><enter>`".
 
-Then, type "`<ctrl+/>`43`<enter>`". 12
+Then, type "`<ctrl+/>`43`<enter>`".
 <br/>
 Type "`<right>`" 12 times in a row (or hold down the right key until you reach the end of "index1" on line 43).
 <br/>
