@@ -76,18 +76,23 @@ Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from the Googl
 4. 
 Type "nano`<space>`L`<tab>`.j`<tab><enter>`".
 <br/>
+- This opens up nano to edit the file "ListExamples.java", I used `<tab>` to autofill "ListExamples" from typing "L", then used `<tab>` to autofill "ListExamples.java" from typing ".j"
 > Alternate: (Only for the line above, the lines below will be needed for both methods): Type "`<up><up><up><up><up><enter>`".
+> - The command for opening nano is 5 up in the search history, so typing `<up>`  times five should access it 
 
 Then, type "`<ctrl + />`43`<enter>`".
-<br/>
+- This takes me to line 43 of the file in nano
+
 <img width="960" alt="step4-part1" src="https://user-images.githubusercontent.com/66851491/221411861-6e234162-184f-4d97-b4a7-c41714e6a3be.png">
 <br/>
 Type "`<right>`" 12 times in a row (or hold down the right key until you reach the end of "index1" on line 43).
 <br/>
 Type "`<backspace>`2".
-<br/>
+- This fixes the mistake in the file
+
 Type "`<ctrl + x>`y`<enter>`". 
-<br/>
+- This saves the changes made in the file using `<ctrl + x>`, and "y" confirms that I want to save the changes made in the file 
+
 <img width="960" alt="step4-part25" src="https://user-images.githubusercontent.com/66851491/221411887-3e5066dc-2fb3-43f1-b509-97f9887a3dbb.png">
 
 <br/>
@@ -96,6 +101,9 @@ Type "`<ctrl + x>`y`<enter>`".
 Type "`<up><up><up><enter>`".
 <br/>
 Type "`<up><up><up><enter>`".
+- The command for compiling the JUnit tester is 3 up in the search history, so typing `<up>` three times should access it 
+- The command for running the JUnit tester is 3 up in the search history, so typing `<up>` three times should access it 
+
 > Alternate: The exact same as the lines above.
 <img width="960" alt="step5" src="https://user-images.githubusercontent.com/66851491/221411932-70754638-3422-4378-824c-9885b55b04f5.png">
 
@@ -103,10 +111,14 @@ Type "`<up><up><up><enter>`".
 
 6. 
 Type "git`<space>`add`<space>`.`<enter>`".
-<br/>
+- I add the changed working directory "." to the staging area
+
 Type "git`<space>`commit`<space>`-m`<space>`";"`<enter>`".
-<br/>
+- I commit the changes in the staging area with the message ";" (the semi-colon is close to the quotation mark, so it makes the command faster and easier to type"
+
 Type "git`<space>`push`<enter>`".
+- I push the committed changes to the remote GitHub lab7 repository on my account
+
 > Alternate: The exact same as the lines above.
 <img width="960" alt="step6" src="https://user-images.githubusercontent.com/66851491/221411943-aeec470d-9456-4d4d-af1b-06491eef994f.png">
 
