@@ -53,7 +53,7 @@ Copy the JUnit compile command by clicking to the Google Doc tab, highlighting t
 <br/>
 **OR** clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl + c>`".
 <br/>
-Then, click back to VSC and type "`<ctrl + v><enter>`".
+Then, click back to VSC and type "`<ctrl + v><enter>`". 
 - This compiles the JUnit tester, I copy and pasted the entire command
 
 Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl + c>`", 
