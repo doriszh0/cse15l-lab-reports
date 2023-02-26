@@ -78,9 +78,6 @@ Type "`<right>`" 12 times in a row (or hold down the right key until you reach t
 <br/>
 Type "`<backspace>`2".
 <br/>
-<img width="960" alt="step4-part2" src="https://user-images.githubusercontent.com/66851491/221411875-d1b2829a-ba60-465c-8652-8efd93a52539.png">
-
-<br/>
 Type "`<ctrl+x>`y`<enter>`". 
 <br/>
 <img width="960" alt="step4-part25" src="https://user-images.githubusercontent.com/66851491/221411887-3e5066dc-2fb3-43f1-b509-97f9887a3dbb.png">
