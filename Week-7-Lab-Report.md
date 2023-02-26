@@ -38,6 +38,7 @@ Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`".
 3. 
 Type "cd`<space>`l`<tab><enter>`".
 > Note: That is a lower case "L", not an upper case "I".
+
 Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl+c>`", 
 <br/>
 OR clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl+c>`".
