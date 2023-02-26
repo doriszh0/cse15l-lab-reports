@@ -41,7 +41,7 @@ Then, click back to VSC and type `<ctrl+v><enter>`.
 <br/>
 Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, `<ctrl+c>`, OR clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, `<ctrl+c>`.
 <br/>
-Then, click back to VSC and type `<ctrl+v><space>`Lis`<tab>`T`<tab><enter>`.
+Then, click back to VSC and type `<ctrl+v><space>`Lis`<tab>`Tests.
 > Alternate: Type `<up><up><enter><up><up><up><enter><up><up><up><up><enter>`.
 
 <br/>
@@ -63,4 +63,18 @@ Type "`<ctrl+x>`y`<enter>`".
 <br/>
 
 5.
-Type "`<up><up><up>`
+Type "`<up><up><up><enter>`
+<br/>
+Type "`<up><up><up><enter>`
+> Alternate: The exact same as the lines above.
+
+6. 
+Type "git`<space>`add`<space>`.`<enter>`".
+<br/>
+Type "git`<space>`commit`<space>`-m`<space>`";"`<enter>`".
+<br/>
+Type "git`<space>`push`<enter>`".
+> Alternate: The exact same as the lines above.
+
+
+
