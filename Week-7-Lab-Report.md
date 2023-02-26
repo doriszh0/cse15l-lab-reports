@@ -22,7 +22,6 @@ Also, have a Google document with your forked GitHub lab7 repository link, and t
 1. 
 Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`". 
 > Alternate: Type "`<up><enter>`".
-<br/>
 <img width="960" alt="step1" src="https://user-images.githubusercontent.com/66851491/221411789-33e8df0b-e3a3-47f6-859d-2d8cfdc5135d.png">
 
 <br/>
@@ -34,7 +33,6 @@ OR clicking to your GitHub lab7 repository tab, clicking on the green "Code" but
 <br/>
 Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
 > Alternate: Type "`<up><enter>`".
-<br/>
 <img width="960" alt="step2" src="https://user-images.githubusercontent.com/66851491/221411830-ef5e0b95-b2e6-4cee-9022-769f8fa16a9e.png">
 
 <br/>
@@ -57,7 +55,6 @@ Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from Google Do
 <br/>
 OR "`<ctrl + v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Course Website).
 > Alternate: Type "`<up><up><enter><up><up><up><enter><up><up><up><up><enter>`".
-<br/>
 <img width="960" alt="step3" src="https://user-images.githubusercontent.com/66851491/221411845-1c7b8a59-0e53-4855-8e50-47db5132d461.png">
 
 <br/>
@@ -70,7 +67,6 @@ Type "nano`<space>`L`<tab>`.j`<tab><enter>`".
 Then, type "`<ctrl + />`43`<enter>`".
 <br/>
 <img width="960" alt="step4-part1" src="https://user-images.githubusercontent.com/66851491/221411861-6e234162-184f-4d97-b4a7-c41714e6a3be.png">
-
 <br/>
 Type "`<right>`" 12 times in a row (or hold down the right key until you reach the end of "index1" on line 43).
 <br/>
@@ -87,7 +83,6 @@ Type "`<up><up><up><enter>`".
 <br/>
 Type "`<up><up><up><enter>`".
 > Alternate: The exact same as the lines above.
-<br/>
 <img width="960" alt="step5" src="https://user-images.githubusercontent.com/66851491/221411932-70754638-3422-4378-824c-9885b55b04f5.png">
 
 <br/>
@@ -99,23 +94,19 @@ Type "git`<space>`commit`<space>`-m`<space>`";"`<enter>`".
 <br/>
 Type "git`<space>`push`<enter>`".
 > Alternate: The exact same as the lines above.
-<br/>
 <img width="960" alt="step6" src="https://user-images.githubusercontent.com/66851491/221411943-aeec470d-9456-4d4d-af1b-06491eef994f.png">
 
 <br/>
 
 ## Done!
-<br/>
 <img width="930" alt="step6-part2" src="https://user-images.githubusercontent.com/66851491/221411954-941ca798-f7af-4e84-b2b8-a77a853ba9fd.png">
 <br/>
 
 ## Before:
-<br/>
 <img width="686" alt="lab7-before" src="https://user-images.githubusercontent.com/66851491/221411977-8f757437-58c4-44bf-829c-27b125385a3f.png">
 <br/>
 
 ## After: 
-<br/>
 <img width="689" alt="lab7-after" src="https://user-images.githubusercontent.com/66851491/221411984-7aeba523-f733-4377-b1a7-5325e070f50c.png">
 <br/>
 
