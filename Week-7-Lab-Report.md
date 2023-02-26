@@ -37,7 +37,6 @@ Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`".
 <br/>
 <img width="960" alt="step2" src="https://user-images.githubusercontent.com/66851491/221411830-ef5e0b95-b2e6-4cee-9022-769f8fa16a9e.png">
 
-
 <br/>
 
 3. 
@@ -61,7 +60,6 @@ OR "`<ctrl+v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Cou
 <br/>
 <img width="960" alt="step3" src="https://user-images.githubusercontent.com/66851491/221411845-1c7b8a59-0e53-4855-8e50-47db5132d461.png">
 
-
 <br/>
 
 4. 
@@ -82,7 +80,6 @@ Type "`<ctrl+x>`y`<enter>`".
 <br/>
 <img width="960" alt="step4-part25" src="https://user-images.githubusercontent.com/66851491/221411887-3e5066dc-2fb3-43f1-b509-97f9887a3dbb.png">
 
-
 <br/>
 
 5.
@@ -93,6 +90,7 @@ Type "`<up><up><up><enter>`".
 <br/>
 <img width="960" alt="step5" src="https://user-images.githubusercontent.com/66851491/221411932-70754638-3422-4378-824c-9885b55b04f5.png">
 
+<br/>
 
 6. 
 Type "git`<space>`add`<space>`.`<enter>`".
@@ -104,18 +102,20 @@ Type "git`<space>`push`<enter>`".
 <br/>
 <img width="960" alt="step6" src="https://user-images.githubusercontent.com/66851491/221411943-aeec470d-9456-4d4d-af1b-06491eef994f.png">
 
+<br/>
 
 ## Done!
 <br/>
 <img width="930" alt="step6-part2" src="https://user-images.githubusercontent.com/66851491/221411954-941ca798-f7af-4e84-b2b8-a77a853ba9fd.png">
+<br/>
 
 ## Before:
 <br/>
 <img width="686" alt="lab7-before" src="https://user-images.githubusercontent.com/66851491/221411977-8f757437-58c4-44bf-829c-27b125385a3f.png">
-
+<br/>
 
 ## After: 
 <br/>
 <img width="689" alt="lab7-after" src="https://user-images.githubusercontent.com/66851491/221411984-7aeba523-f733-4377-b1a7-5325e070f50c.png">
-
+<br/>
 
