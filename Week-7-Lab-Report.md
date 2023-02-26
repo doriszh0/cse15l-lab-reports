@@ -37,7 +37,7 @@ Copy your GitHub lab7 repository link by clicking to the Google Doc tab, highlig
 **OR** clicking to your GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
 <br/>
 Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
-- This clones my forked lab7 repository, I copy and paste the repository's SSH key
+- This clones my forked lab7 repository, I copy and pasted the repository's SSH key
 > Alternate: Type "`<up><enter>`".
 > - The command was 1 up in the search history, so typing `<up>` once should access it 
 <img width="960" alt="step2" src="https://user-images.githubusercontent.com/66851491/221411830-ef5e0b95-b2e6-4cee-9022-769f8fa16a9e.png">
@@ -54,15 +54,21 @@ Copy the JUnit compile command by clicking to the Google Doc tab, highlighting t
 **OR** clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl + c>`".
 <br/>
 Then, click back to VSC and type "`<ctrl + v><enter>`".
-<br/>
+- This compiles the JUnit tester, I copy and pasted the entire command
+
 Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl + c>`", 
 <br/>
 **OR** clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl + c>`".
 <br/>
-Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from Google Doc), 
+Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from the Google Doc), 
 <br/>
 **OR** "`<ctrl + v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Course Website).
+- This runs the JUnit tester, I copy and pasted the entire command (if copied from the Google Goc), 
+- **OR** copy and pasted the command without specifying the file name (if copied from the website), in which I then used `<tab>` to autofill "ListExamples" from typing "l", then used `<tab>` to autofill "ListExamplesTests." from typing "T", then used `<backspace>` on the period to delete it
 > Alternate: Type "`<up><up><enter><up><up><up><enter><up><up><up><up><enter>`".
+> - The command for changing the directory to the GitHub repository lab7 is 2 up in the search history, so typing `<up>` twice should access it 
+> - The command for running the JUnit tester is 3 up in the search history, so typing `<up>` three times should access it 
+> - The command for compiling the JUnit tester is 4 up in the search history, so typing `<up>` four times should access it 
 <img width="960" alt="step3" src="https://user-images.githubusercontent.com/66851491/221411845-1c7b8a59-0e53-4855-8e50-47db5132d461.png">
 
 <br/>
