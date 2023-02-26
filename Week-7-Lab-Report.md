@@ -28,11 +28,11 @@ Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`".
 <br/>
 
 2. 
-Copy your GitHub lab7 repository link by clicking to the Google Doc tab, highlighting the link, "`<ctrl+c>`", 
+Copy your GitHub lab7 repository link by clicking to the Google Doc tab, highlighting the link, "`<ctrl + c>`", 
 <br/>
 OR clicking to your GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
 <br/>
-Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`".
+Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
 > Alternate: Type "`<up><enter>`".
 <br/>
 <img width="960" alt="step2" src="https://user-images.githubusercontent.com/66851491/221411830-ef5e0b95-b2e6-4cee-9022-769f8fa16a9e.png">
@@ -43,19 +43,19 @@ Then, click back to VSC and type "git`<space>`clone`<space><ctrl+v><enter>`".
 Type "cd`<space>`l`<tab><enter>`".
 > Note: That is a lower case "L", not an upper case "I".
 
-Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl+c>`", 
+Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl + c>`", 
 <br/>
-OR clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl+c>`".
+OR clicking to Week 3 of the CS15L Course Website tab, highlighting the compile command, "`<ctrl + c>`".
 <br/>
-Then, click back to VSC and type "`<ctrl+v><enter>`".
+Then, click back to VSC and type "`<ctrl + v><enter>`".
 <br/>
-Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl+c>`", 
+Copy the JUnit run command by clicking to the Google Doc tab, highlighting the run command, "`<ctrl + c>`", 
 <br/>
-OR clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl+c>`".
+OR clicking to Week 3 of the CS15L Course Website tab, highlighting the run command, "`<ctrl + c>`".
 <br/>
-Then, click back to VSC and type "`<ctrl+v><enter>`" (if copied from Google Doc), 
+Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from Google Doc), 
 <br/>
-OR "`<ctrl+v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Course Website).
+OR "`<ctrl + v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Course Website).
 > Alternate: Type "`<up><up><enter><up><up><up><enter><up><up><up><up><enter>`".
 <br/>
 <img width="960" alt="step3" src="https://user-images.githubusercontent.com/66851491/221411845-1c7b8a59-0e53-4855-8e50-47db5132d461.png">
@@ -67,7 +67,7 @@ Type "nano`<space>`L`<tab>`.j`<tab><enter>`".
 <br/>
 > Alternate: (Only for the line above, the lines below will be needed for both methods): Type "`<up><up><up><up><up><enter>`".
 
-Then, type "`<ctrl+/>`43`<enter>`".
+Then, type "`<ctrl + />`43`<enter>`".
 <br/>
 <img width="960" alt="step4-part1" src="https://user-images.githubusercontent.com/66851491/221411861-6e234162-184f-4d97-b4a7-c41714e6a3be.png">
 
@@ -76,7 +76,7 @@ Type "`<right>`" 12 times in a row (or hold down the right key until you reach t
 <br/>
 Type "`<backspace>`2".
 <br/>
-Type "`<ctrl+x>`y`<enter>`". 
+Type "`<ctrl + x>`y`<enter>`". 
 <br/>
 <img width="960" alt="step4-part25" src="https://user-images.githubusercontent.com/66851491/221411887-3e5066dc-2fb3-43f1-b509-97f9887a3dbb.png">
 
