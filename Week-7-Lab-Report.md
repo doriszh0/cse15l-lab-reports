@@ -50,7 +50,6 @@ Then, click back to VSC and type "`<ctrl+v><space>`Lis`<tab>`Tests".
 Type "nano`<space>`Lis`<tab>`.`<tab><enter>`".
 <br/>
 > Alternate (Only for the line above, the lines below will be needed for both methods): Type "`<up><up><up><up><up><enter>`".
-<br/>
 
 Then, type "`<ctrl+/>`43`<enter>`". 12
 <br/>
