@@ -7,12 +7,11 @@ Also, have a Google document with your forked GitHub lab7 repository link, and t
 
 > Note: I will be doing this challenge task on a fresh run, so it assumes that none of the commands are in the history. However, it is possible to do this challenge faster by having some of the commands done once to get them saved in the history, and then using the `<up>` key to get to the commands. (I will type the alternate version for the steps with this method as well) The order in which I would put the commands in history are this (Command at the very bottom would be the most recent command): 
 <br/>
-> On the personal computer:
-<br/>
-> * `ssh cs15lwi23ata@ieng6.ucsd.edu` the command for logging into the remote server
-<br/>
-> On the remote server:
-<br/>
+
+> On the personal computer: <br/>
+> * `ssh cs15lwi23ata@ieng6.ucsd.edu` the command for logging into the remote server <br/> <br/>
+> 
+> On the remote server: <br/>
 > * `nano ListExamples.java` the command for opening the editor for ListExamples
 > * `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` the command for running the JUnit tests
 > * `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` the command for compiling the JUnit tests
