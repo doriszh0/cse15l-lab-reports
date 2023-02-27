@@ -50,7 +50,7 @@ Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
 
 **(3)** <br/>
 Type "cd`<space>`l`<tab><enter>`".
-- This changes the directory to the GitHub repository lab7, I used `<tab>` to autofill "lab7" from just "l"
+- This changes the directory to the GitHub repository lab7, I used `<tab>` to autofill "lab7/" from just "l"
 > Note: That is a lower case "L", not an upper case "I".
 
 Copy the JUnit compile command by clicking to the Google Doc tab, highlighting the compile command, "`<ctrl + c>`", 
