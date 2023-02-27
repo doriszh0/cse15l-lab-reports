@@ -16,6 +16,7 @@ hello
 [This leads to Lab Report #2](https://doriszh0.github.io/cse15l-lab-reports/Week-2-Lab-Report.html)
 <br/>
 [This leads to Lab Report #3](https://doriszh0.github.io/cse15l-lab-reports/Week-3-Lab-Report.html)
+<br>
 [This leads to Lab Report #4](https://doriszh0.github.io/cse15l-lab-reports/Week-7-Lab-Report.html)
 
 --------------------------------------------
