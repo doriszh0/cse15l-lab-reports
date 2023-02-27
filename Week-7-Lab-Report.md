@@ -22,7 +22,7 @@ Also, have a Google document with your forked GitHub lab7 repository link, and t
 
 ## Start the Timer!
 
-**1** 
+**1** <br/>
 Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`". 
 - This logs me into the remote server
 > Alternate: Type "`<up><enter>`".
@@ -31,7 +31,7 @@ Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`".
 
 <br/>
 
-**2**
+**2** <br/>
 Copy your GitHub lab7 repository link by clicking to the Google Doc tab, highlighting the link, "`<ctrl + c>`", 
 <br/>
 **OR** clicking to your GitHub lab7 repository tab, clicking on the green "Code" button, clicking on "SSH", clicking on the copy button.
@@ -44,7 +44,7 @@ Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
 
 <br/>
 
-**3**
+**3** <br/>
 Type "cd`<space>`l`<tab><enter>`".
 - This changes the directory to the GitHub repository lab7, I used `<tab>` to autofill "lab7" from just "l"
 > Note: That is a lower case "L", not an upper case "I".
@@ -73,7 +73,7 @@ Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from the Googl
 
 <br/>
 
-**4** 
+**4** <br/>
 Type "nano`<space>`L`<tab>`.j`<tab><enter>`".
 <br/>
 - This opens up nano to edit the file "ListExamples.java", I used `<tab>` to autofill "ListExamples" from typing "L", then used `<tab>` to autofill "ListExamples.java" from typing ".j"
@@ -97,7 +97,7 @@ Type "`<ctrl + x>`y`<enter>`".
 
 <br/>
 
-**5**
+**5** <br/>
 Type "`<up><up><up><enter>`".
 <br/>
 Type "`<up><up><up><enter>`".
@@ -109,7 +109,7 @@ Type "`<up><up><up><enter>`".
 
 <br/>
 
-**6**
+**6** <br/>
 Type "git`<space>`add`<space>`.`<enter>`".
 - I add the changed working directory "." to the staging area
 
