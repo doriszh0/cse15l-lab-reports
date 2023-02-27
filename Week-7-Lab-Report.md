@@ -27,6 +27,7 @@ Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`".
 - This logs me into the remote server
 > Alternate: Type "`<up><enter>`".
 > - The command was 1 up in the search history, so typing `<up>` once should access it 
+
 <img width="960" alt="step1" src="https://user-images.githubusercontent.com/66851491/221411789-33e8df0b-e3a3-47f6-859d-2d8cfdc5135d.png">
 
 <br/>
@@ -40,6 +41,7 @@ Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
 - This clones my forked lab7 repository, I copy and pasted the repository's SSH key
 > Alternate: Type "`<up><enter>`".
 > - The command was 1 up in the search history, so typing `<up>` once should access it 
+
 <img width="960" alt="step2" src="https://user-images.githubusercontent.com/66851491/221411830-ef5e0b95-b2e6-4cee-9022-769f8fa16a9e.png">
 
 <br/>
@@ -69,6 +71,7 @@ Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from the Googl
 > - The command for changing the directory to the GitHub repository lab7 is 2 up in the search history, so typing `<up>` twice should access it 
 > - The command for running the JUnit tester is 3 up in the search history, so typing `<up>` three times should access it 
 > - The command for compiling the JUnit tester is 4 up in the search history, so typing `<up>` four times should access it 
+
 <img width="960" alt="step3" src="https://user-images.githubusercontent.com/66851491/221411845-1c7b8a59-0e53-4855-8e50-47db5132d461.png">
 
 <br/>
@@ -105,6 +108,7 @@ Type "`<up><up><up><enter>`".
 - The command for running the JUnit tester is 3 up in the search history, so typing `<up>` three times should access it 
 
 > Alternate: The exact same as the lines above.
+
 <img width="960" alt="step5" src="https://user-images.githubusercontent.com/66851491/221411932-70754638-3422-4378-824c-9885b55b04f5.png">
 
 <br/>
@@ -120,6 +124,7 @@ Type "git`<space>`push`<enter>`".
 - I push the committed changes to the remote GitHub lab7 repository on my account
 
 > Alternate: The exact same as the lines above.
+
 <img width="960" alt="step6" src="https://user-images.githubusercontent.com/66851491/221411943-aeec470d-9456-4d4d-af1b-06491eef994f.png">
 
 <br/>
