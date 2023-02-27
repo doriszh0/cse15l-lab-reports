@@ -119,13 +119,13 @@ Type "`<up><up><up><enter>`".
 
 **(6)** <br/>
 Type "git`<space>`add`<space>`.`<enter>`".
-- I add the changed working directory "." to the staging area
+- This adds the changed working directory "." to the staging area
 
 Type "git`<space>`commit`<space>`-m`<space>`";"`<enter>`".
-- I commit the changes in the staging area with the message ";" (the semi-colon is close to the quotation mark, so it makes the command faster and easier to type"
+- This commits the changes in the staging area with the message ";" (the semi-colon is close to the quotation mark, so it makes the command faster and easier to type)
 
 Type "git`<space>`push`<enter>`".
-- I push the committed changes to the remote GitHub lab7 repository on my account
+- This pushes the committed changes to the remote GitHub lab7 repository on my account
 
 > Alternate: The exact same as the lines above.
 
