@@ -25,6 +25,7 @@ Also, have a Google document with your forked GitHub lab7 repository link, and t
 **(1)** <br/>
 Type "ssh`<space>`cs15lwi23ata@ieng6.ucsd.edu`<enter>`". 
 - This logs me into the remote server
+
 > Alternate: Type "`<up><enter>`".
 > - The command was 1 up in the search history, so typing `<up>` once should access it 
 
@@ -39,6 +40,7 @@ Copy your GitHub lab7 repository link by clicking to the Google Doc tab, highlig
 <br/>
 Then, click back to VSC and type "git`<space>`clone`<space><ctrl + v><enter>`".
 - This clones my forked lab7 repository, I copy and pasted the repository's SSH key
+
 > Alternate: Type "`<up><enter>`".
 > - The command was 1 up in the search history, so typing `<up>` once should access it 
 
@@ -67,6 +69,7 @@ Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from the Googl
 **OR** "`<ctrl + v><space>`L`<tab>`T`<tab><backspace><enter>`" (if copied from the Course Website).
 - This runs the JUnit tester, I copy and pasted the entire command (if copied from the Google Goc), 
 - **OR** copy and pasted the command without specifying the file name (if copied from the website), in which I then used `<tab>` to autofill "ListExamples" from typing "l", then used `<tab>` to autofill "ListExamplesTests." from typing "T", then used `<backspace>` on the period to delete it
+
 > Alternate: Type "`<up><up><enter><up><up><up><enter><up><up><up><up><enter>`".
 > - The command for changing the directory to the GitHub repository lab7 is 2 up in the search history, so typing `<up>` twice should access it 
 > - The command for running the JUnit tester is 3 up in the search history, so typing `<up>` three times should access it 
@@ -80,6 +83,7 @@ Then, click back to VSC and type "`<ctrl + v><enter>`" (if copied from the Googl
 Type "nano`<space>`L`<tab>`.j`<tab><enter>`".
 <br/>
 - This opens up nano to edit the file "ListExamples.java", I used `<tab>` to autofill "ListExamples" from typing "L", then used `<tab>` to autofill "ListExamples.java" from typing ".j"
+
 > Alternate: (Only for the line above, the lines below will be needed for both methods): Type "`<up><up><up><up><up><enter>`".
 > - The command for opening nano is 5 up in the search history, so typing `<up>`  times five should access it 
 
