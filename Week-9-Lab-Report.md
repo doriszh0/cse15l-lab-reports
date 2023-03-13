@@ -67,8 +67,15 @@ java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > score.txt
 
 <br/>
 
+
 ```
 grep -C 0 "Tests run:" score.txt > grep-score.txt
+```
+> First, we need to get the line that shows how many tests have failed. If there was a failed test, then the JUnit output would have the line `Tests run: __,  Failures: __`, where there would be numbers in place of the `__`. Therefore, we use grep to search for the `Tests run:` line and then save the output in a text file called `grep-score.txt`. The option `-C 0` means context 0, in which context refers to the lines before and after the matching line. Context 0 ensures that we get only the line that has the matching text. 
+
+<br/>
+
+```
 if [[ -s grep-score.txt ]]
 then
     grep -o "[0-9]*" grep-score.txt > numbers.txt
@@ -78,23 +85,30 @@ then
     GRADE=`expr $DIFFERENCE / $TESTS \* 100`
     echo "You failed $FAILS out of $TESTS tests"
     echo "Your grade is $GRADE%"
-else 
-    grep -C 0 "OK" score.txt > grep-score.txt
-    grep -o "[0-9]*" grep-score.txt > numbers.txt
-    TESTS=`head -n 1 numbers.txt`
-    echo "You failed 0 tests out of $TESTS tests"
-    echo "Your grade is 100%!"
-fi
 ```
-> First, we need to get the line that shows how many tests have failed. If there was a failed test, then the output would have the line `Tests run: __,  Failures: __`, where there would be numbers in place of the `__`. Therefore, we use grep to search for the `Tests run:` line and then save the output in a text file called `grep-score.txt`. The option `-C 0` means context 0, in which context refers to the lines before and after the matching line. Context 0 ensures that we get only the line that has the matching text. 
-
-> Next, we check test `-s` to check whether or not `grep-score.txt` is empty (returns true if file exists and is not empty),  which determines whether or not the student passed all their tests or not. This is because if all the tests pass, the output will not contain the text `Tests run:`, which means `grep-score.txt` should be empty. 
+> Next, we check test `-s` to check whether or not `grep-score.txt` is empty (returns true if file exists and is not empty),  which determines whether or not the student passed all their tests or not. This is because if all the tests pass, the output will not contain the text `"Tests run:"`, which means `grep-score.txt` should be empty. 
 
 > Therefore, if `grep-score.txt` is not empty, then we want to get the numbers from the test to see how many tests we failed. We can do this by using grep again with `-o "[0-9]*"` and then saving the output in a text file called `number.txt`. The option `-o` refers to only-matching, which means only the text that matches will be output. The option `"[0-9]*"` is a pattern that identifies any number, and the `*` at the end means the pattern can occur multiple times. 
 
 > Each number found in `grep-score.txt` should be output on a new line in `numbers.txt`, which means we can then use the `head` and `tail` commands to get the two numbers individually. Based on the formatting, the first number would be the number of tests, so we use `head -n 1 numbers.txt` to save that value in the variable `TESTS`. The option `-n 1` ensures that the number of lines output is only 1 (the head itself). The second number would be the number of failed tests, so we use `tail -n 1 numbers.txt` to save that value in the variable `FAILS`. Again, the option `-n 1` ensures that the number of lines output is only 1 (the tail itself). 
 
-> We then want to find the number of tests passed, so we calculate the difference between the total number of tests and the number of failed tests using the `expr` command and save the value in the variable `DIFFERENCE`.
+> We then want to find the number of tests passed, so we calculate the difference between the total number of tests and the number of failed tests using the `expr` command and save the value in the variable `DIFFERENCE`. To get the percentage grade, we then use `expr` again to divide the number of tests passed by the total number of tests, and then multiply that by 100. This value is saved in the variable `GRADE`. 
 
-> To get the percentage grade, we then divide the number of tests passed by the total number of tests, and then multiply that by 100. This value is saved in the variable `GRADE`. 
+> Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests, as well as the grade in percent form. 
+
+<br/>
+
+```
+else 
+    grep -C 0 "OK" score.txt > grep-score.txt
+    TESTS=`grep -o "[0-9]" grep-score.txt`
+    echo "You failed 0 tests out of $TESTS tests"
+    echo "Your grade is 100%!"
+fi
+```
+> If `grep-score.txt` is empty, then that means the student passed all of the tests. We still want to get the number of total tests, so instead of looking for `"Tests run:"`, we look for `"OK"` because if all the test pass, the JUnit output would have the line `OK (__ tests)`, where there would be a number in place of the `__`. That's why we do `grep -C 0` again but for `"OK"`, and we just overwrite the previous grep-score.txt file with the new output. 
+
+> Next, similar to the process described above, we use `grep -o "[0-9]"` on grep-score.txt to get the number of total tests. Because there should only be one number this time, we do not need the `*` after `[0-9]`. Another difference because there should only be one number is that we can just directly save the grep output in the variable `TESTS`. 
+
+> Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests (always fail 0 tests), as well as the grade in percent form (always print 100%). 
 
