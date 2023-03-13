@@ -184,8 +184,12 @@ Another thing I would want to change is to make the grading script universal for
 <br/>
 Finally, the grade output is currently in fraction form, but it would be nice to put the grade in percent form too. The issue is that this would involve floats, but bash arithmetic expansion can only return integers. Therefore, I would need another method to do operations in bash that can calculate floats. 
 
+<br/><br/>
+
 ## Closing Statement
 
-As this is the last lab report, 
+I found making the grading script very interesting and a really good learning experience because I discovered all kinds of new options for commands I had previously known (such as `-C` for grep), as well as just completely new commands that I had not previously known (such as `head` and bash arithmetic expansion). While the grading script is far from perfect or even that good, I am still happy with how it turned out because of how much I learned from writing it, and also finally seeing the terminal output actually be correct after figuring out and fixing so many issues. 
+
+<br/>
 
 
