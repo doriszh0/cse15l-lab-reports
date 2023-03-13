@@ -170,6 +170,7 @@ In the Week 6 Lab, we were provided with GitHub repositories to run through grad
 
 [list-examples-subtle](https://github.com/ucsd-cse15l-f22/list-examples-subtle)
 > <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690536-9a9af1b1-3eeb-424f-82a9-d3353c75c8f1.png">
+> Note: I checked that the test that failed was the merge test.
 
 <br/>
 
