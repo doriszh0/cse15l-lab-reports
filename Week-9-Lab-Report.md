@@ -116,7 +116,38 @@ fi
 
 <br/><br/>
 
-## Showing That the Grading Script Actually Works
+## Showing That the Grading Script Actually Does Work
 
 Now that the explanation is finally over, let's get to testing some files!
+
+<br/>
+
+In the Week 6 Lab, we were provided with GitHub repositories to run through grading script, so I will show the results here.
+
+
+[Link](https://github.com/ucsd-cse15l-f22/list-methods-lab3)
+
+<br/>
+
+[Link](https://github.com/ucsd-cse15l-f22/list-methods-corrected)
+
+<br/>
+
+[Link](https://github.com/ucsd-cse15l-f22/list-methods-compile-error)
+
+<br/>
+
+[Link](https://github.com/ucsd-cse15l-f22/list-methods-signature)
+
+<br/>
+
+[Link](https://github.com/ucsd-cse15l-f22/list-methods-filename)
+
+<br/>
+
+[Link](https://github.com/ucsd-cse15l-f22/list-methods-nested)
+
+<br/>
+
+[Link](https://github.com/ucsd-cse15l-f22/list-examples-subtle)
 
