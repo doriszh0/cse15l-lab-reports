@@ -178,5 +178,14 @@ These should be the correct results for each of the repositories!
 
 ## Considerations for Future Changes
 
+One thing I would definitely change if I had more time is the test result output. If you normally run JUnit, the output also includes exactly which tests failed, and exactly how the test failed so that the student will know what they need to fix, but my current grading script does not include that. One way I could implement this is just by including the JUnit command to run `TestListExamples` without redirecting the output, which would then print all the information to the terminal. However, it would be much better if I could only get the part that says which test failed and how it failed, and this would probably involve more greps. 
+<br/>
+Another thing I would want to change is to make the grading script universal for the test file as well. Instead of explicitly putting in `TestListExamples.java` in the grading script, I would put `$2` instead so that it is possible to specify which test file to use in the terminal, just like for the student submission. 
+<br/>
+Finally, the grade output is currently in fraction form, but it would be nice to put the grade in percent form too. The issue is that this would involve floats, but bash arithmetic expansion can only return integers. Therefore, I would need another method to do operations in bash that can calculate floats. 
+
+## Closing Statement
+
+As this is the last lab report, 
 
 
