@@ -2,6 +2,6 @@
 
 ## Week 6: Grading Script
 
-<img width="326" alt="gradescript" src="gradescript.png">
+<img width="326" alt="gradescript" src="images/gradescript.png">
 
 
