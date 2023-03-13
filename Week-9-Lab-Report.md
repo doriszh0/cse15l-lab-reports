@@ -131,37 +131,37 @@ In the Week 6 Lab, we were provided with GitHub repositories to run through grad
 <br/>
 
 [list-methods-corrected](https://github.com/ucsd-cse15l-f22/list-methods-corrected)
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224689969-bc26e1f9-96b1-461b-a431-c18e37156303.png">
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224689969-bc26e1f9-96b1-461b-a431-c18e37156303.png">
 
 
 <br/>
 
 [list-methods-compile-error](https://github.com/ucsd-cse15l-f22/list-methods-compile-error)
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690068-fc26da19-3d6c-4b9c-b273-79916f7bdcf4.png">
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690068-fc26da19-3d6c-4b9c-b273-79916f7bdcf4.png">
 
 
 <br/>
 
 [list-methods-signature](https://github.com/ucsd-cse15l-f22/list-methods-signature)
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690150-169b6b52-3daf-4060-b6b0-d6e758990b93.png">
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690150-169b6b52-3daf-4060-b6b0-d6e758990b93.png">
 
 
 <br/>
 
 [list-methods-filename](https://github.com/ucsd-cse15l-f22/list-methods-filename)
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690243-5d6208b4-44a5-4a1f-9235-3a4d5380b39b.png">
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690243-5d6208b4-44a5-4a1f-9235-3a4d5380b39b.png">
 
 
 <br/>
 
 [list-methods-nested](https://github.com/ucsd-cse15l-f22/list-methods-nested)
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690348-ecdb3976-eaf9-49f3-b4ac-df46cecb1b03.png">
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690348-ecdb3976-eaf9-49f3-b4ac-df46cecb1b03.png">
 
 
 <br/>
 
 [list-examples-subtle](https://github.com/ucsd-cse15l-f22/list-examples-subtle)
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690536-9a9af1b1-3eeb-424f-82a9-d3353c75c8f1.png">
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690536-9a9af1b1-3eeb-424f-82a9-d3353c75c8f1.png">
 
 
 
