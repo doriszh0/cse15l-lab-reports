@@ -112,3 +112,7 @@ fi
 
 > Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests (always fail 0 tests), as well as the grade in percent form (always print 100%). 
 
+## Showing That the Grading Script Actually Works
+
+Now that the explanation is finally over, let's get to testing some files!
+
