@@ -4,7 +4,7 @@
 
 <img width="500" alt="gradescript" src="images/gradescript.png">
 
-> This is the grading script my partner and I wrote during Week 6!
+> This is the grading script my partner and I wrote during Week 6! (I made some new changes for this lab report, though)
 
 <br/><br/>
 
@@ -169,6 +169,14 @@ Note: I have two tests in my test file, `TestListExamples.java`, one I wrote mys
 
 [list-examples-subtle](https://github.com/ucsd-cse15l-f22/list-examples-subtle)
 > <img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690536-9a9af1b1-3eeb-424f-82a9-d3353c75c8f1.png">
+
+<br/>
+
+These should be the correct results for each of the repositories!
+
+<br/><br/>
+
+## Considerations for Future Changes
 
 
 
