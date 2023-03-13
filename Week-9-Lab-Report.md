@@ -37,7 +37,7 @@ else
     exit 1
 fi
 ```
-> Using the `cp` command on `TestListExamples.java`, We first copy the file that is used to test the student submission into `student-submission`, the same directory as the student submission, to make access simpler. Then, we change the directory to `student-submission` using `cd`.
+> Using the `cp` command on `TestListExamples.java`, we first copy the file that is used to test the student submission into `student-submission`, the same directory as the student submission, to make access simpler. Then, we change the directory to `student-submission` using `cd`.
 > Now we need to check whether or not the student submission contains the file we need, and to do this, we use an if statement. We ask if, specifically the file (`-f`), `ListExamples.java` exists in the directory, and if it does, we print `ListExamples.java found` in the terminal. If it does not exist, then we print `need file ListExamples.java`, and then we terminate the script with exit code 1 due to the missing file. 
 
 <br/>
@@ -62,5 +62,27 @@ java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > score.txt
 ```
 > Now we actually run the JUnit tester `TestListExamples` and save the output in a text file called `score.txt`.
 
+<br/>
 
+```
+grep -C 0 "Tests run:" score.txt > grep-score.txt
+if [[ -s grep-score.txt ]]
+then
+    grep -o "[0-9]*" grep-score.txt > numbers.txt
+    TESTS=`head -n 1 numbers.txt`
+    FAILS=`tail -n 1 numbers.txt`
+    DIFFERENCE=`expr $TESTS - $FAILS`
+    GRADE=`expr $DIFFERENCE / $TESTS \* 100`
+    echo "You failed $FAILS out of $TESTS tests"
+    echo "Your grade is $GRADE%"
+else 
+    grep -C 0 "OK" score.txt > grep-score.txt
+    grep -o "[0-9]*" grep-score.txt > numbers.txt
+    TESTS=`head -n 1 numbers.txt`
+    echo "You failed 0 tests out of $TESTS tests"
+    echo "Your grade is 100%!"
+fi
+```
+> First, we need to get the line that shows how many tests have failed. If there was a failed test, then the output would have the line `Tests run: __,  Failures: __`, where there would be numbers in place of the `__`. Therefore, we use grep to search for the `Tests run:` line and then save the output in a text file called `grep-score.txt`. The part `-C 0` means context 0, in which context refers to the lines before and after the matching line. Context 0 ensures that we get only the line that has the matching text. 
+> Next, we check use `-s` to check whether or not `grep-score.txt` is empty,  which determines whether or not the student passed all their tests or not. 
 
