@@ -83,10 +83,9 @@ then
     grep -o "[0-9]*" grep-score.txt > numbers.txt
     TESTS=`head -n 1 numbers.txt`
     FAILS=`tail -n 1 numbers.txt`
-    DIFFERENCE=`expr $TESTS - $FAILS`
-    GRADE=`expr $DIFFERENCE / $TESTS \* 100`
+    PASSES=$(( $TESTS - $FAILS ))
     echo "You failed $FAILS out of $TESTS tests"
-    echo "Your grade is $GRADE%"
+    echo "Your grade is $PASSES/$TESTS"
 ```
 > Next, we check test `-s` to check whether or not `grep-score.txt` is empty (returns true if file exists and is not empty),  which determines whether or not the student passed all their tests or not. This is because if all the tests pass, the output will not contain the text `"Tests run:"`, which means `grep-score.txt` should be empty. 
 
@@ -94,9 +93,9 @@ then
 
 > Each number found in `grep-score.txt` should be output on a new line in `numbers.txt`, which means we can then use the `head` and `tail` commands to get the two numbers individually. Based on the formatting, the first number would be the number of tests, so we use `head -n 1 numbers.txt` to save that value in the variable `TESTS`. The option `-n 1` ensures that the number of lines output is only 1 (the head itself). The second number would be the number of failed tests, so we use `tail -n 1 numbers.txt` to save that value in the variable `FAILS`. Again, the option `-n 1` ensures that the number of lines output is only 1 (the tail itself). 
 
-> We then want to find the number of tests passed, so we calculate the difference between the total number of tests and the number of failed tests using the `expr` command and save the value in the variable `DIFFERENCE`. To get the percentage grade, we then use `expr` again to divide the number of tests passed by the total number of tests, and then multiply that by 100. This value is saved in the variable `GRADE`. 
+> We then want to find the number of tests passed, so we calculate the difference between the total number of tests and the number of failed tests using arithmetic expansion in bash and save the value in the variable `PASSES`.
 
-> Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests, as well as the grade in percent form. 
+> Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests, as well as the grade in fraction form. 
 
 <br/>
 
@@ -105,14 +104,14 @@ else
     grep -C 0 "OK" score.txt > grep-score.txt
     TESTS=`grep -o "[0-9]" grep-score.txt`
     echo "You failed 0 tests out of $TESTS tests"
-    echo "Your grade is 100%!"
+    echo "Your grade is $TESTS/$TESTS"
 fi
 ```
 > If `grep-score.txt` is empty, then that means the student passed all of the tests. We still want to get the number of total tests, so instead of looking for `"Tests run:"`, we look for `"OK"` because if all the test pass, the JUnit output would have the line `OK (__ tests)`, where there would be a number in place of the `__`. That's why we do `grep -C 0` again but for `"OK"`, and we just overwrite the previous grep-score.txt file with the new output. 
 
 > Next, similar to the process described above, we use `grep -o "[0-9]"` on grep-score.txt to get the number of total tests. Because there should only be one number this time, we do not need the `*` after `[0-9]`. Another difference because there should only be one number is that we can just directly save the grep output in the variable `TESTS`. 
 
-> Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests (always fail 0 tests), as well as the grade in percent form (always print 100%). 
+> Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests (always fail 0 tests), as well as the grade in fraction form (fraction will always equal 1). 
 
 <br/><br/>
 
@@ -126,28 +125,43 @@ In the Week 6 Lab, we were provided with GitHub repositories to run through grad
 
 
 [list-methods-lab3](https://github.com/ucsd-cse15l-f22/list-methods-lab3)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224689814-a7a18dca-7ecb-44e2-9a0d-576030231a9a.png">
+
 
 <br/>
 
 [list-methods-corrected](https://github.com/ucsd-cse15l-f22/list-methods-corrected)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224689969-bc26e1f9-96b1-461b-a431-c18e37156303.png">
+
 
 <br/>
 
 [list-methods-compile-error](https://github.com/ucsd-cse15l-f22/list-methods-compile-error)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690068-fc26da19-3d6c-4b9c-b273-79916f7bdcf4.png">
+
 
 <br/>
 
 [list-methods-signature](https://github.com/ucsd-cse15l-f22/list-methods-signature)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690150-169b6b52-3daf-4060-b6b0-d6e758990b93.png">
+
 
 <br/>
 
 [list-methods-filename](https://github.com/ucsd-cse15l-f22/list-methods-filename)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690243-5d6208b4-44a5-4a1f-9235-3a4d5380b39b.png">
+
 
 <br/>
 
 [list-methods-nested](https://github.com/ucsd-cse15l-f22/list-methods-nested)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690348-ecdb3976-eaf9-49f3-b4ac-df46cecb1b03.png">
+
 
 <br/>
 
 [list-examples-subtle](https://github.com/ucsd-cse15l-f22/list-examples-subtle)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/66851491/224690536-9a9af1b1-3eeb-424f-82a9-d3353c75c8f1.png">
+
+
 
