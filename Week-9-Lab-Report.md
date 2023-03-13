@@ -123,6 +123,7 @@ Now that the explanation is finally over, let's get to testing some files!
 
 In the Week 6 Lab, we were provided with GitHub repositories to run through grading script, so I will show the results here.
 > Note: I have two tests in my test file, `TestListExamples.java`, one I wrote myself to test the filter method, and the other one was given originally to test the merge method. The test file can be seen below:
+
 > <img width="423" alt="image" src="https://user-images.githubusercontent.com/66851491/224691476-2e0e4d3f-d56e-4d59-a4ed-00dc865bbecf.png">
 
 <br/>
