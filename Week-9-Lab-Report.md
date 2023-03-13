@@ -6,6 +6,8 @@
 
 > This is the grading script my partner and I wrote during Week 6!
 
+<br/><br/>
+
 ## How the Grading Script Works
 
 ```
@@ -111,6 +113,8 @@ fi
 > Next, similar to the process described above, we use `grep -o "[0-9]"` on grep-score.txt to get the number of total tests. Because there should only be one number this time, we do not need the `*` after `[0-9]`. Another difference because there should only be one number is that we can just directly save the grep output in the variable `TESTS`. 
 
 > Finally, we print out the results of the tests in the terminal, showing how many tests failed out of the total number of tests (always fail 0 tests), as well as the grade in percent form (always print 100%). 
+
+<br/><br/>
 
 ## Showing That the Grading Script Actually Works
 
