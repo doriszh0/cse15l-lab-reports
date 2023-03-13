@@ -2,7 +2,7 @@
 
 ## Week 6: Grading Script
 
-<img width="326" alt="gradescript" src="images/gradescript.png">
+<img width="500" alt="gradescript" src="images/gradescript.png">
 
 > This is the grading script my partner and I wrote during Week 6!
 
@@ -125,29 +125,29 @@ Now that the explanation is finally over, let's get to testing some files!
 In the Week 6 Lab, we were provided with GitHub repositories to run through grading script, so I will show the results here.
 
 
-[Link](https://github.com/ucsd-cse15l-f22/list-methods-lab3)
+[list-methods-lab3](https://github.com/ucsd-cse15l-f22/list-methods-lab3)
 
 <br/>
 
-[Link](https://github.com/ucsd-cse15l-f22/list-methods-corrected)
+[list-methods-corrected](https://github.com/ucsd-cse15l-f22/list-methods-corrected)
 
 <br/>
 
-[Link](https://github.com/ucsd-cse15l-f22/list-methods-compile-error)
+[list-methods-compile-error](https://github.com/ucsd-cse15l-f22/list-methods-compile-error)
 
 <br/>
 
-[Link](https://github.com/ucsd-cse15l-f22/list-methods-signature)
+[list-methods-signature](https://github.com/ucsd-cse15l-f22/list-methods-signature)
 
 <br/>
 
-[Link](https://github.com/ucsd-cse15l-f22/list-methods-filename)
+[list-methods-filename](https://github.com/ucsd-cse15l-f22/list-methods-filename)
 
 <br/>
 
-[Link](https://github.com/ucsd-cse15l-f22/list-methods-nested)
+[list-methods-nested](https://github.com/ucsd-cse15l-f22/list-methods-nested)
 
 <br/>
 
-[Link](https://github.com/ucsd-cse15l-f22/list-examples-subtle)
+[list-examples-subtle](https://github.com/ucsd-cse15l-f22/list-examples-subtle)
 
