@@ -73,7 +73,7 @@ java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > score.txt
 ```
 grep -C 0 "Tests run:" score.txt > grep-score.txt
 ```
-> First, we need to get the line that shows how many tests have failed. If there was a failed test, then the JUnit output would have the line `Tests run: __,  Failures: __`, where there would be numbers in place of the `__`. Therefore, we use grep to search for the `Tests run:` line and then save the output in a text file called `grep-score.txt`. The option `-C 0` means context 0, in which context refers to the lines before and after the matching line. Context 0 ensures that we get only the line that has the matching text. 
+> First, we need to get the line that shows how many tests have failed. If there was a failed test, then the JUnit output would have the line `"Tests run: __,  Failures: __"`, where there would be numbers in place of the `__`. Therefore, we use grep to search for the `"Tests run:"` line and then save the output in a text file called `grep-score.txt`. The option `-C 0` means context 0, in which context refers to the lines before and after the matching line. Context 0 ensures that we get only the line that has the matching text. 
 
 <br/>
 
@@ -107,7 +107,7 @@ else
     echo "Your grade is $TESTS/$TESTS"
 fi
 ```
-> If `grep-score.txt` is empty, then that means the student passed all of the tests. We still want to get the number of total tests, so instead of looking for `"Tests run:"`, we look for `"OK"` because if all the test pass, the JUnit output would have the line `OK (__ tests)`, where there would be a number in place of the `__`. That's why we do `grep -C 0` again but for `"OK"`, and we just overwrite the previous grep-score.txt file with the new output. 
+> If `grep-score.txt` is empty, then that means the student passed all of the tests. We still want to get the number of total tests, so instead of looking for `"Tests run:"`, we look for `"OK"` because if all the test pass, the JUnit output would have the line `"OK (__ tests)"`, where there would be a number in place of the `__`. That's why we do `grep -C 0` again but for `"OK"`, and we just overwrite the previous grep-score.txt file with the new output. 
 
 > Next, similar to the process described above, we use `grep -o "[0-9]"` on grep-score.txt to get the number of total tests. Because there should only be one number this time, we do not need the `*` after `[0-9]`. Another difference because there should only be one number is that we can just directly save the grep output in the variable `TESTS`. 
 
