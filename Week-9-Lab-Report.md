@@ -13,7 +13,7 @@
 ```
 CPATH='.;../lib/hamcrest-core-1.3.jar;../lib/junit-4.13.2.jar'
 ```
-> This line just stores the JUnit path in a variable so that the code is cleaner to look at
+> This line just stores the JUnit path in a variable so that the code is cleaner to look at.
 
 <br/>
 
@@ -42,7 +42,7 @@ fi
 ```
 > Using the `cp` command on `TestListExamples.java`, we first copy the file that is used to test the student submission into `student-submission`, the same directory as the student submission, to make access simpler. Then, we change the directory to `student-submission` using `cd`.
 
-> Now we need to check whether or not the student submission contains the file we need, and to do this, we use an if statement. We ask if, specifically the file (`-f`), `ListExamples.java` exists in the directory, and if it does, we print `ListExamples.java found` in the terminal. If it does not exist, then we print `"need file ListExamples.java"`, and then we terminate the script with exit code 1 due to the missing file. 
+> Now we need to check whether or not the student submission contains the file we need, and to do this, we use an if statement. We ask if, specifically the file (`-f`), `ListExamples.java` exists in the directory, and if it does, we print `"ListExamples.java found"` in the terminal. If it does not exist, then we print `"need file ListExamples.java"`, and then we terminate the script with exit code 1 due to the missing file. 
 
 <br/>
 
